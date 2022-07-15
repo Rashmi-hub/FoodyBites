@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="HomeMenuCollectionViewCell" reuseIdentifier="HomeMenuCollectionViewCell" id="gTV-IL-0wX" customClass="HomeMenuCollectionViewCell" customModule="FoodyBites" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="113" height="101"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="113" height="101"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FoodPicHome" translatesAutoresizingMaskIntoConstraints="NO" id="ziY-Zq-UwA">
+                        <rect key="frame" x="0.0" y="0.0" width="113" height="101"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ziY-Zq-UwA" secondAttribute="trailing" id="3uE-yE-UWc"/>
+                <constraint firstItem="ziY-Zq-UwA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6rr-sL-MS6"/>
+                <constraint firstAttribute="bottom" secondItem="ziY-Zq-UwA" secondAttribute="bottom" id="PyA-gZ-XNf"/>
+                <constraint firstItem="ziY-Zq-UwA" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="urM-fC-TOZ"/>
+            </constraints>
+            <size key="customSize" width="113" height="101"/>
+            <point key="canvasLocation" x="52.898550724637687" y="64.620535714285708"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="FoodPicHome" width="431" height="314"/>
+    </resources>
+</document>
