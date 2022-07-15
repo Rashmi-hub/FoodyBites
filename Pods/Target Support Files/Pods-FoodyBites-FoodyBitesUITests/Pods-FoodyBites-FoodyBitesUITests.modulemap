@@ -1,0 +1,6 @@
+framework module Pods_FoodyBites_FoodyBitesUITests {
+  umbrella header "Pods-FoodyBites-FoodyBitesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
