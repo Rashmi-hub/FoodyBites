@@ -15,6 +15,9 @@ class ChangePasswordVC: UIViewController {
 
     }
         
+    @IBAction func btnBackClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     static func instance()-> ChangePasswordVC {
         return UIStoryboard.init(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "ChangePasswordVC") as! ChangePasswordVC
     }

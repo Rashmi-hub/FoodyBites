@@ -22,7 +22,10 @@ class EditProfileViewController: UIViewController {
         viewEmail.layer.borderWidth = 1
         viewEmail.layer.borderColor = UIColor.lightGray.cgColor
         viewEmail.layer.cornerRadius = 10
-
+        btnUpdate.callBackTarget { sender in
+            print(sender.currentTitle)
+        }
+       // btnUpdate.DynamicFontSize = true
         //txtName.setLeftImage(imageName: "NameIcon")
         //txtEmail.setLeftImage(imageName: "EmailIcon")
     } 
@@ -30,6 +33,10 @@ class EditProfileViewController: UIViewController {
     @IBAction func updateClicked(_ sender: UIButton) {
         let vc = FilterVC.instance()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func btnBackClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
     static func instance() -> EditProfileViewController {

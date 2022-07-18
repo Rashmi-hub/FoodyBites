@@ -8,7 +8,8 @@
 import UIKit
 
 class HomeHeadingTableViewCell: UITableViewCell {
-
+  
+    @IBOutlet weak var btnSeeAll: UIButton!
     @IBOutlet weak var lblHeading: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()

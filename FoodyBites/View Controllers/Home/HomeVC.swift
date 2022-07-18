@@ -6,12 +6,27 @@
 //
 
 import UIKit
+class HomeViewController: UIViewController, passDelegate, category, friends {
+    func passTheCurrent(collectionViewIndex: Int) {
+        let vc = CategoryVC.instance()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func passTheCurrent(tableViewIndex: Int, collectionViewIndex: Int) {
+        let vc = TrendingRestaurantVC.instance()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func passTheCurrent(collectionViewCell: Int) {
+        let vc = FindFriendsVC.instance()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
-class HomeViewController: UIViewController {
-
+    @IBOutlet weak var viewSearch: UIView!
     @IBOutlet weak var tblContainer: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewSearch.layer.cornerRadius = 8.0
         tblContainer.delegate = self
         tblContainer.dataSource = self
         tblContainer.register(UINib.init(nibName: "HomeOneTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeOneTableViewCell")
@@ -19,6 +34,7 @@ class HomeViewController: UIViewController {
         tblContainer.register(UINib.init(nibName: "HomeThirdTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeThirdTableViewCell")
         tblContainer.register(UINib.init(nibName: "HomeHeadingTableViewCell", bundle: nil), forCellReuseIdentifier: "HomeHeadingTableViewCell")
     }
+    
     @IBAction func filterClicked(_ sender: UIButton) {
         let vc  = FilterVC.instance()
         self.navigationController?.pushViewController(vc, animated: true)
@@ -40,11 +56,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "HomeHeadingTableViewCell", for: indexPath) as! HomeHeadingTableViewCell
                 cell.lblHeading.text = "Trending Restaurants"
                     return cell
-                }
+            }
             else if indexPath.row == 1 {
                     let cell = tableView.dequeueReusableCell(withIdentifier: "HomeOneTableViewCell", for: indexPath) as! HomeOneTableViewCell
+                cell.delegate = self
                             return cell
                 }
+        
        else if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "HomeHeadingTableViewCell", for: indexPath) as! HomeHeadingTableViewCell
                 cell.lblHeading.text = "Category"
@@ -52,6 +70,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                 }
                 else if indexPath.row == 3 {
                     let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSecondTableViewCell", for: indexPath) as! HomeSecondTableViewCell
+                    cell.delegate = self
                             return cell
                 }
         else if indexPath.row == 4 {
@@ -61,6 +80,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
                  }
         else {
                 let cell = tableView.dequeueReusableCell(withIdentifier: "HomeThirdTableViewCell", for: indexPath) as! HomeThirdTableViewCell
+                    cell.delegate = self
                         return cell
                 }
     }
@@ -70,14 +90,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
           return 50
         }
         else if indexPath.row == 3 {
-            return 150
+            return 110
         }
         else if indexPath.row == 5 {
             return 60
         }
         else {
-            return 380
+            return 310
         }
     }
-    
 }

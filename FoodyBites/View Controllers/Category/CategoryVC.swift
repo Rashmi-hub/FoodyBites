@@ -28,8 +28,7 @@ class CategoryVC: UIViewController {
         return UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "CategoryVC") as! CategoryVC
     }
     @IBAction func backClicked(_ sender: UIButton) {
-        let vc = HomeViewController.instance()
-        self.navigationController?.popToViewController(vc, animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
 }
 extension CategoryVC: UITableViewDelegate, UITableViewDataSource {

@@ -6,9 +6,12 @@
 //
 
 import UIKit
-
+protocol friends{
+   func passTheCurrent(collectionViewCell: Int)
+}
 class HomeThirdTableViewCell: UITableViewCell {
     @IBOutlet weak var ThirdCollectionView: UICollectionView!
+    var delegate: friends?
     override func awakeFromNib() {
         super.awakeFromNib()
         ThirdCollectionView.delegate = self
@@ -50,5 +53,8 @@ extension HomeThirdTableViewCell: UICollectionViewDelegate, UICollectionViewData
         return 20
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.passTheCurrent(collectionViewCell: indexPath.row)
+    }
 }
 

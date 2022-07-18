@@ -12,6 +12,9 @@
         <array key="JosefinSans-Regular.ttf">
             <string>JosefinSans-Regular</string>
         </array>
+        <array key="JosefinSans-SemiBold.ttf">
+            <string>JosefinSans-SemiBold</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Edit Profile View Controller-->
@@ -32,20 +35,17 @@
                                             <constraint firstAttribute="width" constant="150" id="vLo-r6-9Ym"/>
                                         </constraints>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCa-iL-TeQ">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MCa-iL-TeQ">
                                         <rect key="frame" x="40" y="440" width="334" height="60"/>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="ClickEventColor"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="Updation"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="9jR-aw-VSt"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="18"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Update">
-                                            <backgroundConfiguration key="background" cornerRadius="10">
-                                                <color key="backgroundColor" name="ClickEventColor"/>
-                                            </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" name="JosefinSans-SemiBold" family="Josefin Sans" pointSize="18"/>
-                                        </buttonConfiguration>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Update"/>
                                         <connections>
                                             <action selector="updateClicked:" destination="tp5-Vo-hU2" eventType="touchUpInside" id="z0g-ze-qd8"/>
                                         </connections>
@@ -156,6 +156,9 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="Back"/>
+                                        <connections>
+                                            <action selector="btnBackClicked:" destination="tp5-Vo-hU2" eventType="touchUpInside" id="W14-Qa-oix"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -198,7 +201,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Back" width="15" height="30"/>
+        <image name="Back" width="10" height="20"/>
         <image name="EmailIcon" width="25" height="20"/>
         <image name="Man" width="126" height="125"/>
         <image name="NameIcon" width="20" height="20"/>

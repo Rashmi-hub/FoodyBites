@@ -9,19 +9,22 @@ import UIKit
 import Cosmos
 
 class FilterVC: UIViewController {
-
+    
     @IBOutlet weak var sliderDistance: UISlider!
     @IBOutlet weak var filterCollection: UICollectionView!
     @IBOutlet weak var SliderMinValue: UILabel!
     @IBOutlet weak var sliderMaxValue: UILabel!
     @IBOutlet weak var viewRating: CosmosView!
+    var selectedIndex = 0
     var arrayCategory = ["Indian","Italian","Maxican","Chinese","Japanise","Thai","Korean","Europian","Arabian"]
     let thumbImg = UIImage(named: "thumb_slider")
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         filterCollection.delegate = self
         filterCollection.dataSource = self
+        filterCollection.isUserInteractionEnabled = true
+        filterCollection.allowsSelection = true
         SliderMinValue.text = "\(Int(sliderDistance.minimumValue))"
         sliderMaxValue.text = "\(Int(sliderDistance.maximumValue))"
         sliderDistance.setThumbImage(thumbImg, for: .normal)
@@ -32,8 +35,12 @@ class FilterVC: UIViewController {
         viewRating.settings.fillMode = .full
     }
     
+    @IBAction func btnBackClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func sliderChangeValue(_ sender: UISlider) {
-       
+        
         let value = Int(sliderDistance.value)
         if value == 100 {
             let imgValue = FilterVC.textToImage(drawText: "\(value)", inImage: thumbImg!, atPoint: CGPoint(x: 7.5, y: 10))
@@ -41,8 +48,13 @@ class FilterVC: UIViewController {
         }
         else {
             let imgValue = FilterVC.textToImage(drawText: "\(value)", inImage: thumbImg!, atPoint: CGPoint(x: 11.5, y: 10))
-                sliderDistance.setThumbImage(imgValue, for: .normal)
+            sliderDistance.setThumbImage(imgValue, for: .normal)
         }
+    }
+    
+    @IBAction func ApplyClicked(_ sender: Any) {
+        let vc = TrendingRestaurantVC.instance()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     static func instance() -> FilterVC {
@@ -55,25 +67,29 @@ class FilterVC: UIViewController {
         
         let scale = UIScreen.main.scale
         UIGraphicsBeginImageContextWithOptions(image.size, false, scale)
-
+        
         let textFontAttributes = [
             NSAttributedString.Key.font: textFont,
             NSAttributedString.Key.foregroundColor: textColor,
-            ] as [NSAttributedString.Key : Any]
+        ] as [NSAttributedString.Key : Any]
         image.draw(in: CGRect(origin: CGPoint.zero, size: image.size))
-
+        
         let rect = CGRect(origin: point, size: image.size)
         text.draw(in: rect, withAttributes: textFontAttributes)
-
+        
         let newImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-
+        
         return newImage!
     }
     
 }
 
 extension FilterVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 9
@@ -83,15 +99,24 @@ extension FilterVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FilterCollectionViewCell", for: indexPath) as! FilterCollectionViewCell
         cell.lblCategoryType.text = arrayCategory[indexPath.row]
         cell.btnCollection.gradientLayer.cornerRadius = 10.0
-
-        if indexPath.row == 0 {
+        cell.btnCollection.isUserInteractionEnabled = true
+        cell.btnCollection.tag = indexPath.row
+        cell.btnCollection.addTarget(self, action: #selector(editGroupAction(sender:)), for: .touchUpInside)
+        if indexPath.row == selectedIndex {
             cell.btnCollection.startColor = UIColor(named: "Right")!
             cell.btnCollection.endColor = UIColor(named: "Left")!
         }
         else {
             cell.btnCollection.backgroundColor = .white
+            cell.btnCollection.startColor = .clear
+            cell.btnCollection.endColor = .clear
         }
         return cell
+    }
+    
+    @objc func editGroupAction(sender: UIButton) {
+        selectedIndex = sender.tag
+        filterCollection.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -112,25 +137,27 @@ extension FilterVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
         cell.btnCollection.startColor = UIColor(named: "Right")!
         cell.btnCollection.endColor = UIColor(named: "Left")!
         cell.btnCollection.horizontalMode = true
+        filterCollection.reloadData()
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as! FilterCollectionViewCell
         cell.btnCollection.backgroundColor = .white
     }
-    
+  
 }
+
 @IBDesignable
 public class Gradient: UIButton {
     @IBInspectable var startColor:   UIColor = .black { didSet { updateColors() }}
     @IBInspectable var endColor:     UIColor = .white { didSet { updateColors() }}
     @IBInspectable var horizontalMode:  Bool =  false { didSet { updatePoints() }}
     @IBInspectable var diagonalMode:    Bool =  false { didSet { updatePoints() }}
-
+    
     override public class var layerClass: AnyClass { CAGradientLayer.self }
-
+    
     var gradientLayer: CAGradientLayer { layer as! CAGradientLayer }
-
+    
     func updatePoints() {
         if horizontalMode {
             gradientLayer.startPoint = diagonalMode ? .init(x: 0, y: 0) : .init(x: 0, y: 0.5)
@@ -149,5 +176,5 @@ public class Gradient: UIButton {
         updatePoints()
         updateColors()
     }
-
+    
 }

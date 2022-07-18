@@ -9,7 +9,6 @@ import UIKit
 
 class NotificationTableViewCell: UITableViewCell {
 
-
     @IBOutlet weak var btnSellAll: UIButton!
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var lblStatus: UILabel!
@@ -22,7 +21,6 @@ class NotificationTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }

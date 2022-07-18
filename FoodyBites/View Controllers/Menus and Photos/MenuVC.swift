@@ -20,6 +20,9 @@ class MenuVC: UIViewController {
     static func instance() -> MenuVC {
         return UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "MenuVC") as! MenuVC
     }
+    @IBAction func btnBackClicked(_ sender: UIButton) {
+            self.navigationController?.popViewController(animated: true)
+    }
 }
 
 extension MenuVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

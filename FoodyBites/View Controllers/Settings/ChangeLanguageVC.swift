@@ -16,6 +16,11 @@ class LanguageVC: UIViewController {
         tblLanguage.dataSource = self
         tblLanguage.register(UINib.init(nibName: "LanguageTableViewCell", bundle: nil), forCellReuseIdentifier: "LanguageTableViewCell")
     }
+    
+    @IBAction func btnBackClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     static func instance() -> LanguageVC {
         return UIStoryboard.init(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "LanguageVC") as! LanguageVC
     }

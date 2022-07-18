@@ -6,9 +6,13 @@
 //
 
 import UIKit
+protocol category{
+   func passTheCurrent(collectionViewIndex: Int)
+}
 
 class HomeSecondTableViewCell: UITableViewCell {
     @IBOutlet weak var SecondCollectionView: UICollectionView!
+    var delegate: category?
     override func awakeFromNib() {
         super.awakeFromNib()
         SecondCollectionView.delegate = self
@@ -48,6 +52,10 @@ extension HomeSecondTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.passTheCurrent(collectionViewIndex: indexPath.row)
     }
     
 }

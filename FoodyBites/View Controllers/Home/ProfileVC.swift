@@ -9,12 +9,16 @@ import UIKit
 
 class ProfileVC: UIViewController {
 
+    @IBOutlet weak var btnEditProfile: UIButton!
     @IBOutlet weak var viewCollection: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         viewCollection.delegate = self
         viewCollection.dataSource = self
         viewCollection.register(UINib(nibName: "HomeFirstCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeFirstCollectionViewCell")
+        btnEditProfile.callBackTarget { sender in
+            print(sender.currentTitle)
+        }
     }
     
     @IBAction func EditProfileClicked(_ sender: UIButton) {
@@ -23,7 +27,7 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func SettingsProfileClicked(_ sender: UIButton) {
-        let vc = CategoryVC.instance() 
+        let vc = SettingsVC.instance() 
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -52,7 +56,7 @@ extension ProfileVC: UICollectionViewDelegate, UICollectionViewDataSource, UICol
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 20, left: 20, bottom: 0, right: -20)
+        return UIEdgeInsets(top: 20, left: 10, bottom: 0, right: -20)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {

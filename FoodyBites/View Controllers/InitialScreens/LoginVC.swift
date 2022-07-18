@@ -29,12 +29,7 @@ class LoginViewController: UIViewController {
         let vc = RegisterVC.instance()
         self.navigationController?.pushViewController(vc, animated: true)
     }
-    
-    @IBAction func Click(_ sender: UIButton) {
-        let vc = HomeDetailsVC.instance()
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
-  
+ 
     @IBAction func forgotPasswordClicked(_ sender: Any) {
         let vc = ForgotPasswordVC.instance()
         self.navigationController?.pushViewController(vc, animated: true)

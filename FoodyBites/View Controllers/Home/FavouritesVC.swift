@@ -34,4 +34,9 @@ extension FavouritesViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 380
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = HomeDetailsVC.instance()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

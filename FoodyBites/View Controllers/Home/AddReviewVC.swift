@@ -20,7 +20,6 @@ class AddReviewVC: UIViewController {
     static func instance() -> AddReviewVC {
         return UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "AddReviewVC") as! AddReviewVC
     }
-
 }
 extension AddReviewVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,7 +34,6 @@ extension AddReviewVC: UITableViewDelegate, UITableViewDataSource {
         cell.viewReview.settings.updateOnTouch = true
         cell.viewReview.layer.cornerRadius = 8.0
         cell.viewReview.settings.fillMode = .full
-        
         return cell
     }
     

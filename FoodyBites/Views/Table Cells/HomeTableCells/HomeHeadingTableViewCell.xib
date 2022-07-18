@@ -59,6 +59,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
             <connections>
+                <outlet property="btnSeeAll" destination="KIs-Ui-052" id="PID-O3-gvm"/>
                 <outlet property="lblHeading" destination="QSK-4o-kod" id="XeH-qt-AWu"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="63.616071428571423"/>

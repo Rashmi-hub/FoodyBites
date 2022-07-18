@@ -18,4 +18,7 @@ class PreviewVC: UIViewController {
         return UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "PreviewVC") as! PreviewVC
     }
 
+    @IBAction func btnBackClicked(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
+    }
 }

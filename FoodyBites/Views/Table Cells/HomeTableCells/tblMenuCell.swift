@@ -6,22 +6,23 @@
 //
 
 import UIKit
-
+protocol menuConnect{
+    func menuConnect(collectionItem: Int)
+}
 class tblMenuCell: UITableViewCell {
 
     @IBOutlet weak var CollectionView: UICollectionView!
+    var delegate: menuConnect?
     override func awakeFromNib() {
         super.awakeFromNib()
         CollectionView.delegate = self
         CollectionView.dataSource = self
         CollectionView.register(UINib(nibName: "HomeMenuCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "HomeMenuCollectionViewCell")
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-    
 }
 
 extension tblMenuCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
@@ -47,5 +48,7 @@ extension tblMenuCell: UICollectionViewDelegate, UICollectionViewDataSource, UIC
         return 20
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.menuConnect(collectionItem: indexPath.row)
+    }
 }

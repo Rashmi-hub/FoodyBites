@@ -31,6 +31,8 @@
 		D8615A842865D5E00067DD70 /* FoodyBitesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8615A832865D5E00067DD70 /* FoodyBitesUITestsLaunchTests.swift */; };
 		D8764EEE286C6D6000AAC92E /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8764EEC286C6D5F00AAC92E /* FavouritesTableViewCell.swift */; };
 		D8764EEF286C6D6000AAC92E /* FavouritesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8764EED286C6D6000AAC92E /* FavouritesTableViewCell.xib */; };
+		D89BA349287E9B0200D30681 /* TrendingRestaurantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89BA348287E9B0200D30681 /* TrendingRestaurantVC.swift */; };
+		D89D7F7E28817F5E00B24D49 /* AppExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89D7F7D28817F5D00B24D49 /* AppExtension.swift */; };
 		D89E5F372873FDC0000E613E /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89E5F362873FDC0000E613E /* MenuVC.swift */; };
 		D89E5F3C28740016000E613E /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89E5F3B28740016000E613E /* MenuCollectionViewCell.swift */; };
 		D89E5F3E28743430000E613E /* PreviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89E5F3D28743430000E613E /* PreviewVC.swift */; };
@@ -46,6 +48,9 @@
 		D89EAB5028770F4900E9E6BC /* tblMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D89EAB4E28770F4800E9E6BC /* tblMenuCell.xib */; };
 		D89EAB5328770FB500E9E6BC /* HomeMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89EAB5128770FB500E9E6BC /* HomeMenuCollectionViewCell.swift */; };
 		D89EAB5428770FB500E9E6BC /* HomeMenuCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D89EAB5228770FB500E9E6BC /* HomeMenuCollectionViewCell.xib */; };
+		D89F495628802032003DA4C6 /* FindFriendsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89F495528802032003DA4C6 /* FindFriendsVC.swift */; };
+		D89F495928802355003DA4C6 /* tblFollowCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89F495728802355003DA4C6 /* tblFollowCell.swift */; };
+		D89F495A28802355003DA4C6 /* tblFollowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D89F495828802355003DA4C6 /* tblFollowCell.xib */; };
 		D89FAE5B2875948400D8447E /* ExploreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89FAE592875948400D8447E /* ExploreTableViewCell.swift */; };
 		D89FAE5C2875948400D8447E /* ExploreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D89FAE5A2875948400D8447E /* ExploreTableViewCell.xib */; };
 		D89FAE5E28759D1600D8447E /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89FAE5D28759D1600D8447E /* FilterVC.swift */; };
@@ -65,20 +70,10 @@
 		D8B46586286B02290093A6A4 /* HomeSecondCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B46584286B02290093A6A4 /* HomeSecondCollectionViewCell.xib */; };
 		D8B46589286B0C580093A6A4 /* HomeThirdCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B46587286B0C580093A6A4 /* HomeThirdCollectionViewCell.swift */; };
 		D8B4658A286B0C580093A6A4 /* HomeThirdCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8B46588286B0C580093A6A4 /* HomeThirdCollectionViewCell.xib */; };
-		D8B8B1CC286AD189006AE1B5 /* JosefinSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1BE286AD189006AE1B5 /* JosefinSans-Italic.ttf */; };
-		D8B8B1CD286AD189006AE1B5 /* JosefinSans-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1BF286AD189006AE1B5 /* JosefinSans-ExtraLight.ttf */; };
 		D8B8B1CE286AD189006AE1B5 /* JosefinSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1C0286AD189006AE1B5 /* JosefinSans-Bold.ttf */; };
 		D8B8B1CF286AD189006AE1B5 /* JosefinSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1C1286AD189006AE1B5 /* JosefinSans-SemiBold.ttf */; };
-		D8B8B1D0286AD189006AE1B5 /* JosefinSans-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1C2286AD189006AE1B5 /* JosefinSans-MediumItalic.ttf */; };
-		D8B8B1D1286AD189006AE1B5 /* JosefinSans-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1C3286AD189006AE1B5 /* JosefinSans-ExtraLightItalic.ttf */; };
-		D8B8B1D2286AD189006AE1B5 /* JosefinSans-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1C4286AD189006AE1B5 /* JosefinSans-SemiBoldItalic.ttf */; };
 		D8B8B1D3286AD189006AE1B5 /* JosefinSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1C5286AD189006AE1B5 /* JosefinSans-Regular.ttf */; };
-		D8B8B1D4286AD189006AE1B5 /* JosefinSans-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1C6286AD189006AE1B5 /* JosefinSans-Thin.ttf */; };
-		D8B8B1D5286AD189006AE1B5 /* JosefinSans-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1C7286AD189006AE1B5 /* JosefinSans-LightItalic.ttf */; };
-		D8B8B1D6286AD189006AE1B5 /* JosefinSans-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1C8286AD189006AE1B5 /* JosefinSans-ThinItalic.ttf */; };
 		D8B8B1D7286AD189006AE1B5 /* JosefinSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1C9286AD189006AE1B5 /* JosefinSans-Medium.ttf */; };
-		D8B8B1D8286AD189006AE1B5 /* JosefinSans-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1CA286AD189006AE1B5 /* JosefinSans-Light.ttf */; };
-		D8B8B1D9286AD189006AE1B5 /* JosefinSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D8B8B1CB286AD189006AE1B5 /* JosefinSans-BoldItalic.ttf */; };
 		D8B8B1DB286AD38D006AE1B5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B8B1DA286AD38D006AE1B5 /* LoginVC.swift */; };
 		D8B8B1DD286AD411006AE1B5 /* ForgotPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B8B1DC286AD410006AE1B5 /* ForgotPasswordVC.swift */; };
 		D8B8B1DF286AD47E006AE1B5 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B8B1DE286AD47E006AE1B5 /* RegisterVC.swift */; };
@@ -155,6 +150,8 @@
 		D8615A832865D5E00067DD70 /* FoodyBitesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodyBitesUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D8764EEC286C6D5F00AAC92E /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
 		D8764EED286C6D6000AAC92E /* FavouritesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavouritesTableViewCell.xib; sourceTree = "<group>"; };
+		D89BA348287E9B0200D30681 /* TrendingRestaurantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRestaurantVC.swift; sourceTree = "<group>"; };
+		D89D7F7D28817F5D00B24D49 /* AppExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppExtension.swift; sourceTree = "<group>"; };
 		D89E5F362873FDC0000E613E /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
 		D89E5F3B28740016000E613E /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		D89E5F3D28743430000E613E /* PreviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewVC.swift; sourceTree = "<group>"; };
@@ -170,6 +167,9 @@
 		D89EAB4E28770F4800E9E6BC /* tblMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tblMenuCell.xib; sourceTree = "<group>"; };
 		D89EAB5128770FB500E9E6BC /* HomeMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		D89EAB5228770FB500E9E6BC /* HomeMenuCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeMenuCollectionViewCell.xib; sourceTree = "<group>"; };
+		D89F495528802032003DA4C6 /* FindFriendsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FindFriendsVC.swift; path = "FoodyBites/View Controllers/Follow/FindFriendsVC.swift"; sourceTree = SOURCE_ROOT; };
+		D89F495728802355003DA4C6 /* tblFollowCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblFollowCell.swift; sourceTree = "<group>"; };
+		D89F495828802355003DA4C6 /* tblFollowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tblFollowCell.xib; sourceTree = "<group>"; };
 		D89FAE592875948400D8447E /* ExploreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreTableViewCell.swift; sourceTree = "<group>"; };
 		D89FAE5A2875948400D8447E /* ExploreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreTableViewCell.xib; sourceTree = "<group>"; };
 		D89FAE5D28759D1600D8447E /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
@@ -189,20 +189,10 @@
 		D8B46584286B02290093A6A4 /* HomeSecondCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSecondCollectionViewCell.xib; sourceTree = "<group>"; };
 		D8B46587286B0C580093A6A4 /* HomeThirdCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeThirdCollectionViewCell.swift; sourceTree = "<group>"; };
 		D8B46588286B0C580093A6A4 /* HomeThirdCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeThirdCollectionViewCell.xib; sourceTree = "<group>"; };
-		D8B8B1BE286AD189006AE1B5 /* JosefinSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Italic.ttf"; sourceTree = "<group>"; };
-		D8B8B1BF286AD189006AE1B5 /* JosefinSans-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ExtraLight.ttf"; sourceTree = "<group>"; };
 		D8B8B1C0286AD189006AE1B5 /* JosefinSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Bold.ttf"; sourceTree = "<group>"; };
 		D8B8B1C1286AD189006AE1B5 /* JosefinSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		D8B8B1C2286AD189006AE1B5 /* JosefinSans-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-MediumItalic.ttf"; sourceTree = "<group>"; };
-		D8B8B1C3286AD189006AE1B5 /* JosefinSans-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
-		D8B8B1C4286AD189006AE1B5 /* JosefinSans-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
 		D8B8B1C5286AD189006AE1B5 /* JosefinSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Regular.ttf"; sourceTree = "<group>"; };
-		D8B8B1C6286AD189006AE1B5 /* JosefinSans-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Thin.ttf"; sourceTree = "<group>"; };
-		D8B8B1C7286AD189006AE1B5 /* JosefinSans-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-LightItalic.ttf"; sourceTree = "<group>"; };
-		D8B8B1C8286AD189006AE1B5 /* JosefinSans-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-ThinItalic.ttf"; sourceTree = "<group>"; };
 		D8B8B1C9286AD189006AE1B5 /* JosefinSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Medium.ttf"; sourceTree = "<group>"; };
-		D8B8B1CA286AD189006AE1B5 /* JosefinSans-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-Light.ttf"; sourceTree = "<group>"; };
-		D8B8B1CB286AD189006AE1B5 /* JosefinSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "JosefinSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		D8B8B1DA286AD38D006AE1B5 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = "FoodyBites/View Controllers/InitialScreens/LoginVC.swift"; sourceTree = SOURCE_ROOT; };
 		D8B8B1DC286AD410006AE1B5 /* ForgotPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordVC.swift; sourceTree = "<group>"; };
 		D8B8B1DE286AD47E006AE1B5 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -337,6 +327,8 @@
 			children = (
 				D85A23D9286F221E00850807 /* FollowerTableViewCell.swift */,
 				D85A23DA286F221E00850807 /* FollowerTableViewCell.xib */,
+				D89F495728802355003DA4C6 /* tblFollowCell.swift */,
+				D89F495828802355003DA4C6 /* tblFollowCell.xib */,
 			);
 			path = FollowCells;
 			sourceTree = "<group>";
@@ -345,6 +337,7 @@
 			isa = PBXGroup;
 			children = (
 				D85A23DF286F257300850807 /* FollowVC.swift */,
+				D89F495528802032003DA4C6 /* FindFriendsVC.swift */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -389,6 +382,7 @@
 				D8B8B1BB286AC9DA006AE1B5 /* Resources */,
 				D8B8B1BD286AD16C006AE1B5 /* App Fonts */,
 				D8615A6E2865D5E00067DD70 /* Info.plist */,
+				D89D7F7C28817F2200B24D49 /* Extension */,
 			);
 			path = FoodyBites;
 			sourceTree = "<group>";
@@ -417,6 +411,14 @@
 				D8764EED286C6D6000AAC92E /* FavouritesTableViewCell.xib */,
 			);
 			path = FavouritesCells;
+			sourceTree = "<group>";
+		};
+		D89D7F7C28817F2200B24D49 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D89D7F7D28817F5D00B24D49 /* AppExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		D89E5F352873FCE7000E613E /* Menus and Photos */ = {
@@ -543,19 +545,9 @@
 			isa = PBXGroup;
 			children = (
 				D8B8B1C0286AD189006AE1B5 /* JosefinSans-Bold.ttf */,
-				D8B8B1CB286AD189006AE1B5 /* JosefinSans-BoldItalic.ttf */,
-				D8B8B1BF286AD189006AE1B5 /* JosefinSans-ExtraLight.ttf */,
-				D8B8B1C3286AD189006AE1B5 /* JosefinSans-ExtraLightItalic.ttf */,
-				D8B8B1BE286AD189006AE1B5 /* JosefinSans-Italic.ttf */,
-				D8B8B1CA286AD189006AE1B5 /* JosefinSans-Light.ttf */,
-				D8B8B1C7286AD189006AE1B5 /* JosefinSans-LightItalic.ttf */,
 				D8B8B1C9286AD189006AE1B5 /* JosefinSans-Medium.ttf */,
-				D8B8B1C2286AD189006AE1B5 /* JosefinSans-MediumItalic.ttf */,
 				D8B8B1C5286AD189006AE1B5 /* JosefinSans-Regular.ttf */,
 				D8B8B1C1286AD189006AE1B5 /* JosefinSans-SemiBold.ttf */,
-				D8B8B1C4286AD189006AE1B5 /* JosefinSans-SemiBoldItalic.ttf */,
-				D8B8B1C6286AD189006AE1B5 /* JosefinSans-Thin.ttf */,
-				D8B8B1C8286AD189006AE1B5 /* JosefinSans-ThinItalic.ttf */,
 			);
 			path = "App Fonts";
 			sourceTree = "<group>";
@@ -570,6 +562,7 @@
 				D8B8B1E3286ADBB0006AE1B5 /* ProfileVC.swift */,
 				D8C8FB942872C9D70048EE96 /* AddReviewVC.swift */,
 				D89EAB43287706CE00E9E6BC /* HomeDetailsVC.swift */,
+				D89BA348287E9B0200D30681 /* TrendingRestaurantVC.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -730,8 +723,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D8B8B1CC286AD189006AE1B5 /* JosefinSans-Italic.ttf in Resources */,
 				D8C8FB932872B01F0048EE96 /* ReviewTableViewCell.xib in Resources */,
+				D89F495A28802355003DA4C6 /* tblFollowCell.xib in Resources */,
 				D8F2CF1D286DCDAF0082B5F4 /* LanguageTableViewCell.xib in Resources */,
 				D89EAB482877078700E9E6BC /* ImgTableViewCell.xib in Resources */,
 				D8AEAB662869D23200875310 /* HomeSecondTableViewCell.xib in Resources */,
@@ -744,30 +737,21 @@
 				D85A23E4286F302300850807 /* Review_Filter.storyboard in Resources */,
 				D8B8B1CE286AD189006AE1B5 /* JosefinSans-Bold.ttf in Resources */,
 				D89E5F4628743C4D000E613E /* CategoryTableViewCell.xib in Resources */,
-				D8B8B1CD286AD189006AE1B5 /* JosefinSans-ExtraLight.ttf in Resources */,
-				D8B8B1D5286AD189006AE1B5 /* JosefinSans-LightItalic.ttf in Resources */,
 				D8615A6D2865D5E00067DD70 /* LaunchScreen.storyboard in Resources */,
 				D8C8FB9B2872D8080048EE96 /* Settings.storyboard in Resources */,
 				D8B8B1D7286AD189006AE1B5 /* JosefinSans-Medium.ttf in Resources */,
 				D8F2CF10286D71A50082B5F4 /* Home.storyboard in Resources */,
 				D8B8B1CF286AD189006AE1B5 /* JosefinSans-SemiBold.ttf in Resources */,
 				D89FAE5C2875948400D8447E /* ExploreTableViewCell.xib in Resources */,
-				D8B8B1D8286AD189006AE1B5 /* JosefinSans-Light.ttf in Resources */,
-				D8B8B1D1286AD189006AE1B5 /* JosefinSans-ExtraLightItalic.ttf in Resources */,
-				D8B8B1D9286AD189006AE1B5 /* JosefinSans-BoldItalic.ttf in Resources */,
 				D8AEAB6A2869D25B00875310 /* HomeThirdTableViewCell.xib in Resources */,
 				D85A23DC286F221F00850807 /* FollowerTableViewCell.xib in Resources */,
-				D8B8B1D0286AD189006AE1B5 /* JosefinSans-MediumItalic.ttf in Resources */,
 				D8615A6A2865D5E00067DD70 /* Assets.xcassets in Resources */,
 				D8C8FB992872CB060048EE96 /* AddReviewTableViewCell.xib in Resources */,
 				D8B4658A286B0C580093A6A4 /* HomeThirdCollectionViewCell.xib in Resources */,
 				D8615A682865D5DE0067DD70 /* Main.storyboard in Resources */,
 				D89EAB5428770FB500E9E6BC /* HomeMenuCollectionViewCell.xib in Resources */,
-				D8B8B1D2286AD189006AE1B5 /* JosefinSans-SemiBoldItalic.ttf in Resources */,
-				D8B8B1D4286AD189006AE1B5 /* JosefinSans-Thin.ttf in Resources */,
 				D89EAB5028770F4900E9E6BC /* tblMenuCell.xib in Resources */,
 				D85A23E2286F271700850807 /* Follow.storyboard in Resources */,
-				D8B8B1D6286AD189006AE1B5 /* JosefinSans-ThinItalic.ttf in Resources */,
 				D8B4657E286AFB530093A6A4 /* HomeFirstCollectionViewCell.xib in Resources */,
 				D8F2CF12286D87710082B5F4 /* Profile.storyboard in Resources */,
 				D8764EEF286C6D6000AAC92E /* FavouritesTableViewCell.xib in Resources */,
@@ -902,14 +886,17 @@
 				D89FAE5E28759D1600D8447E /* FilterVC.swift in Sources */,
 				D8B8B1DB286AD38D006AE1B5 /* LoginVC.swift in Sources */,
 				D89EAB4F28770F4900E9E6BC /* tblMenuCell.swift in Sources */,
+				D89D7F7E28817F5E00B24D49 /* AppExtension.swift in Sources */,
 				D8AEAB6D2869E43D00875310 /* HomeHeadingTableViewCell.swift in Sources */,
 				D85A23E0286F257300850807 /* FollowVC.swift in Sources */,
 				D89EAB472877078700E9E6BC /* ImgTableViewCell.swift in Sources */,
 				D8C8FBA52872F6AA0048EE96 /* ChangePasswordVC.swift in Sources */,
+				D89F495928802355003DA4C6 /* tblFollowCell.swift in Sources */,
 				D8C8FBA22872D8D30048EE96 /* SettingsTableViewCell.swift in Sources */,
 				D8F2CF18286DCD180082B5F4 /* ChangeLanguageVC.swift in Sources */,
 				D83AE87828699E10002A69F9 /* NotificationTableViewCell.swift in Sources */,
 				D8B8B1E4286ADBB0006AE1B5 /* ProfileVC.swift in Sources */,
+				D89BA349287E9B0200D30681 /* TrendingRestaurantVC.swift in Sources */,
 				D8B46589286B0C580093A6A4 /* HomeThirdCollectionViewCell.swift in Sources */,
 				D89E5F3C28740016000E613E /* MenuCollectionViewCell.swift in Sources */,
 				D8AEAB692869D25B00875310 /* HomeThirdTableViewCell.swift in Sources */,
@@ -917,6 +904,7 @@
 				D8764EEE286C6D6000AAC92E /* FavouritesTableViewCell.swift in Sources */,
 				D89EAB44287706CF00E9E6BC /* HomeDetailsVC.swift in Sources */,
 				D8AEAB652869D23200875310 /* HomeSecondTableViewCell.swift in Sources */,
+				D89F495628802032003DA4C6 /* FindFriendsVC.swift in Sources */,
 				D8B46585286B02290093A6A4 /* HomeSecondCollectionViewCell.swift in Sources */,
 				D83AE8812869ADBD002A69F9 /* HomeVC.swift in Sources */,
 				D85A23DB286F221F00850807 /* FollowerTableViewCell.swift in Sources */,

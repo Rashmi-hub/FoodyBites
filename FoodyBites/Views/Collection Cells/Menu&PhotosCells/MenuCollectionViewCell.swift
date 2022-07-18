@@ -10,3 +10,4 @@ import UIKit
 class MenuCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var imgPhotos: UIImageView!
 }
+

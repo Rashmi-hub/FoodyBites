@@ -6,9 +6,12 @@
 //
 
 import UIKit
-
+protocol passDelegate {
+    func passTheCurrent(tableViewIndex:Int, collectionViewIndex: Int)
+}
 class HomeOneTableViewCell: UITableViewCell {
     @IBOutlet weak var CollectionView: UICollectionView!
+    var delegate: passDelegate?
     override func awakeFromNib() {
         super.awakeFromNib()
          CollectionView.delegate = self
@@ -18,8 +21,6 @@ class HomeOneTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }
@@ -49,5 +50,9 @@ extension HomeOneTableViewCell: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.passTheCurrent(tableViewIndex: 1, collectionViewIndex: indexPath.row)
     }
 }

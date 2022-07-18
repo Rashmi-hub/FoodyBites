@@ -8,9 +8,8 @@
 import UIKit
 
 class SettingsVC: UIViewController {
-
-    @IBOutlet weak var tblSettings: UITableView!
     
+    @IBOutlet weak var tblSettings: UITableView!
     var arrayAccount = ["Change Password","Change Language"]
     var arrayOther = ["Privacy Policy","Terms & Conditions","Logout"]
     
@@ -20,11 +19,16 @@ class SettingsVC: UIViewController {
         tblSettings.dataSource = self
         tblSettings.register(UINib.init(nibName: "SettingsTableViewCell", bundle: nil), forCellReuseIdentifier: "SettingsTableViewCell")
     }
+    
+    @IBAction func btnBackClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     static func instance() -> SettingsVC {
         return UIStoryboard.init(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
     }
-      
-    }
+    
+}
 
 extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
     
@@ -34,7 +38,7 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-        return arrayAccount.count
+            return arrayAccount.count
         }
         else if section == 1 {
             return arrayOther.count
@@ -87,8 +91,8 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.section == 0{
             if indexPath.row == 0 {
-            let vc = ChangePasswordVC.instance()
-            self.navigationController?.pushViewController(vc, animated: true)
+                let vc = ChangePasswordVC.instance()
+                self.navigationController?.pushViewController(vc, animated: true)
             }
             else if indexPath.row == 1 {
                 let vc = LanguageVC.instance()
@@ -97,16 +101,17 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
         }
         else if indexPath.section == 1{
             if indexPath.row == 2 {
-            showAlert("Are you sure you want to logout?")
+                showAlert("Are you sure you want to logout?")
             }
         }
         
     }
+    
     func showAlert(_ message: String) {
         let alert = UIAlertController(title: "", message: message, preferredStyle: .alert)
-      
+        
         let messageFont = [NSAttributedString.Key.font: UIFont(name: "JosefinSans-SemiBold", size: 20.0)!]
-            let messageAttrString = NSMutableAttributedString(string: message, attributes: messageFont)
+        let messageAttrString = NSMutableAttributedString(string: message, attributes: messageFont)
         alert.setValue(messageAttrString, forKey: "attributedMessage")
         let No = UIAlertAction(title: "No", style: .default) { UIAlertAction in
             print("No button pressed")
@@ -119,6 +124,6 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
         }
         alert.addAction(Yes)
         self.present(alert, animated: true, completion: nil)
-        }
+    }
     
 }
