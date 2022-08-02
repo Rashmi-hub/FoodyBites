@@ -1,16 +1,20 @@
 PODS:
   - Cosmos (23.0.0)
+  - IQKeyboardManager (6.5.10)
 
 DEPENDENCIES:
   - Cosmos (~> 23.0)
+  - IQKeyboardManager
 
 SPEC REPOS:
   trunk:
     - Cosmos
+    - IQKeyboardManager
 
 SPEC CHECKSUMS:
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  IQKeyboardManager: 45a1fa55c1a5b02c61ac0fd7fd5b62bb4ad20d97
 
-PODFILE CHECKSUM: d90bef3453c054a2d74a9caa6dae7d92e3c6a7b4
+PODFILE CHECKSUM: db3d6a7991910ebafbacbbbe26dcda340909070e
 
 COCOAPODS: 1.11.2

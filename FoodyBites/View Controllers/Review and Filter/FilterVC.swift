@@ -15,12 +15,15 @@ class FilterVC: UIViewController {
     @IBOutlet weak var SliderMinValue: UILabel!
     @IBOutlet weak var sliderMaxValue: UILabel!
     @IBOutlet weak var viewRating: CosmosView!
+    @IBOutlet weak var bgView: UIView!
     var selectedIndex = 0
     var arrayCategory = ["Indian","Italian","Maxican","Chinese","Japanise","Thai","Korean","Europian","Arabian"]
     let thumbImg = UIImage(named: "thumb_slider")
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = false
+        title = "Filter"
         filterCollection.delegate = self
         filterCollection.dataSource = self
         filterCollection.isUserInteractionEnabled = true
@@ -33,6 +36,17 @@ class FilterVC: UIViewController {
         viewRating.settings.updateOnTouch = true
         viewRating.layer.cornerRadius = 8.0
         viewRating.settings.fillMode = .full
+        bgView.layer.cornerRadius = 18.0
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        //Set Color
+        let attributes: AnyObject = [ NSAttributedString.Key.foregroundColor: UIColor.black] as AnyObject
+        self.navigationController!.navigationBar.titleTextAttributes = attributes as? [String : AnyObject] as? [NSAttributedString.Key : Any]
+        //Set Font Size
+        self.navigationController!.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "JosefinSans-SemiBold", size: 24.0)!];
+        navigationController?.navigationBar.tintColor = UIColor.black
+
     }
     
     @IBAction func btnBackClicked(_ sender: Any) {
@@ -55,6 +69,10 @@ class FilterVC: UIViewController {
     @IBAction func ApplyClicked(_ sender: Any) {
         let vc = TrendingRestaurantVC.instance()
         self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func resetClicked(_ sender: Any) {
+        viewRating.rating = 1.0
     }
     
     static func instance() -> FilterVC {
@@ -120,7 +138,7 @@ extension FilterVC: UICollectionViewDelegate, UICollectionViewDataSource, UIColl
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let size = (collectionView.bounds.size.width-20)/3
+        let size = (collectionView.bounds.size.width)/3
         return CGSize(width: size , height: 70)
     }
     

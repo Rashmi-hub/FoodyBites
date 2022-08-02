@@ -16,23 +16,21 @@ class EditProfileViewController: UIViewController {
     @IBOutlet weak var txtEmail: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Edit Profile"
         viewName.layer.borderWidth = 1
         viewName.layer.borderColor = UIColor.lightGray.cgColor
         viewName.layer.cornerRadius = 10
         viewEmail.layer.borderWidth = 1
         viewEmail.layer.borderColor = UIColor.lightGray.cgColor
         viewEmail.layer.cornerRadius = 10
-        btnUpdate.callBackTarget { sender in
-            print(sender.currentTitle)
-        }
+        hideKeyboardWhenTappedAround()
+        
        // btnUpdate.DynamicFontSize = true
         //txtName.setLeftImage(imageName: "NameIcon")
         //txtEmail.setLeftImage(imageName: "EmailIcon")
-    } 
-    
+    }
     @IBAction func updateClicked(_ sender: UIButton) {
-        let vc = FilterVC.instance()
-        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.popViewController(animated: true)
     }
     
     @IBAction func btnBackClicked(_ sender: Any) {

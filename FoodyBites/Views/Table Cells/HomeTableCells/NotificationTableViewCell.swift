@@ -13,14 +13,13 @@ class NotificationTableViewCell: UITableViewCell {
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var lblStatus: UILabel!
     @IBOutlet weak var lblName: UILabel!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        imgProfile.layer.cornerRadius = imgProfile.layer.frame.size.width/2
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
     }
-    
 }

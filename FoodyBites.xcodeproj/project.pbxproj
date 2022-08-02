@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AB5959A2889E1DC00C5A470 /* RatingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB595992889E1DC00C5A470 /* RatingVC.swift */; };
 		5C0D3E9FB5CFAF838C1C9062 /* Pods_FoodyBites_FoodyBitesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E7AEE143435C7DAE1F213D /* Pods_FoodyBites_FoodyBitesUITests.framework */; };
 		60937190BC67640BD9F3C109 /* Pods_FoodyBites.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6160F139CBF6022485D9476F /* Pods_FoodyBites.framework */; };
 		B5D087330397635FD8D3E88A /* Pods_FoodyBitesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E26FB1CC7D183594101751B /* Pods_FoodyBitesTests.framework */; };
@@ -55,6 +56,8 @@
 		D89FAE5C2875948400D8447E /* ExploreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D89FAE5A2875948400D8447E /* ExploreTableViewCell.xib */; };
 		D89FAE5E28759D1600D8447E /* FilterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89FAE5D28759D1600D8447E /* FilterVC.swift */; };
 		D89FAE602875A49A00D8447E /* FilterCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D89FAE5F2875A49A00D8447E /* FilterCollectionViewCell.swift */; };
+		D8A0B8B12886883B004EDCA9 /* ExploreCategoryCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A0B8AF2886883B004EDCA9 /* ExploreCategoryCVC.swift */; };
+		D8A0B8B22886883B004EDCA9 /* ExploreCategoryCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8A0B8B02886883B004EDCA9 /* ExploreCategoryCVC.xib */; };
 		D8AEAB612869CF4E00875310 /* HomeOneTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEAB5F2869CF4E00875310 /* HomeOneTableViewCell.swift */; };
 		D8AEAB622869CF4E00875310 /* HomeOneTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8AEAB602869CF4E00875310 /* HomeOneTableViewCell.xib */; };
 		D8AEAB652869D23200875310 /* HomeSecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8AEAB632869D23200875310 /* HomeSecondTableViewCell.swift */; };
@@ -80,6 +83,7 @@
 		D8B8B1E1286AD4D0006AE1B5 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B8B1E0286AD4D0006AE1B5 /* WelcomeVC.swift */; };
 		D8B8B1E4286ADBB0006AE1B5 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B8B1E3286ADBB0006AE1B5 /* ProfileVC.swift */; };
 		D8C552D828746F7100027AD3 /* ExploreCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C552D728746F7100027AD3 /* ExploreCategoryVC.swift */; };
+		D8C6547A28979BC70059EDF3 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C6547928979BC70059EDF3 /* AppConstant.swift */; };
 		D8C8FB922872B01F0048EE96 /* ReviewTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8FB902872B01F0048EE96 /* ReviewTableViewCell.swift */; };
 		D8C8FB932872B01F0048EE96 /* ReviewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C8FB912872B01F0048EE96 /* ReviewTableViewCell.xib */; };
 		D8C8FB952872C9D70048EE96 /* AddReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8FB942872C9D70048EE96 /* AddReviewVC.swift */; };
@@ -90,6 +94,8 @@
 		D8C8FBA22872D8D30048EE96 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8FBA02872D8D30048EE96 /* SettingsTableViewCell.swift */; };
 		D8C8FBA32872D8D30048EE96 /* SettingsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C8FBA12872D8D30048EE96 /* SettingsTableViewCell.xib */; };
 		D8C8FBA52872F6AA0048EE96 /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C8FBA42872F6AA0048EE96 /* ChangePasswordVC.swift */; };
+		D8C9415D288A71FA0053493D /* tblFavouriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8C9415B288A71FA0053493D /* tblFavouriteCell.swift */; };
+		D8C9415E288A71FA0053493D /* tblFavouriteCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D8C9415C288A71FA0053493D /* tblFavouriteCell.xib */; };
 		D8F2CF10286D71A50082B5F4 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F2CF0F286D71A50082B5F4 /* Home.storyboard */; };
 		D8F2CF12286D87710082B5F4 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F2CF11286D87710082B5F4 /* Profile.storyboard */; };
 		D8F2CF15286D88970082B5F4 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F2CF14286D88970082B5F4 /* EditProfileViewController.swift */; };
@@ -116,6 +122,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AB595992889E1DC00C5A470 /* RatingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RatingVC.swift; path = "FoodyBites/View Controllers/Review and Filter/RatingVC.swift"; sourceTree = SOURCE_ROOT; };
 		17E7AEE143435C7DAE1F213D /* Pods_FoodyBites_FoodyBitesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FoodyBites_FoodyBitesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		234612F7103EF442876CADF7 /* Pods-FoodyBites-FoodyBitesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodyBites-FoodyBitesUITests.release.xcconfig"; path = "Target Support Files/Pods-FoodyBites-FoodyBitesUITests/Pods-FoodyBites-FoodyBitesUITests.release.xcconfig"; sourceTree = "<group>"; };
 		327874F4ABADB9859013E13F /* Pods-FoodyBites.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FoodyBites.release.xcconfig"; path = "Target Support Files/Pods-FoodyBites/Pods-FoodyBites.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +181,8 @@
 		D89FAE5A2875948400D8447E /* ExploreTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExploreTableViewCell.xib; sourceTree = "<group>"; };
 		D89FAE5D28759D1600D8447E /* FilterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterVC.swift; sourceTree = "<group>"; };
 		D89FAE5F2875A49A00D8447E /* FilterCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewCell.swift; sourceTree = "<group>"; };
+		D8A0B8AF2886883B004EDCA9 /* ExploreCategoryCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ExploreCategoryCVC.swift; path = "FoodyBites/Views/Collection Cells/ExploreCategory/ExploreCategoryCVC.swift"; sourceTree = SOURCE_ROOT; };
+		D8A0B8B02886883B004EDCA9 /* ExploreCategoryCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ExploreCategoryCVC.xib; path = "FoodyBites/Views/Collection Cells/ExploreCategory/ExploreCategoryCVC.xib"; sourceTree = SOURCE_ROOT; };
 		D8AEAB5F2869CF4E00875310 /* HomeOneTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeOneTableViewCell.swift; sourceTree = "<group>"; };
 		D8AEAB602869CF4E00875310 /* HomeOneTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeOneTableViewCell.xib; sourceTree = "<group>"; };
 		D8AEAB632869D23200875310 /* HomeSecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSecondTableViewCell.swift; sourceTree = "<group>"; };
@@ -199,6 +208,7 @@
 		D8B8B1E0286AD4D0006AE1B5 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		D8B8B1E3286ADBB0006AE1B5 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		D8C552D728746F7100027AD3 /* ExploreCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreCategoryVC.swift; sourceTree = "<group>"; };
+		D8C6547928979BC70059EDF3 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
 		D8C8FB902872B01F0048EE96 /* ReviewTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewCell.swift; sourceTree = "<group>"; };
 		D8C8FB912872B01F0048EE96 /* ReviewTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewTableViewCell.xib; sourceTree = "<group>"; };
 		D8C8FB942872C9D70048EE96 /* AddReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReviewVC.swift; sourceTree = "<group>"; };
@@ -209,6 +219,8 @@
 		D8C8FBA02872D8D30048EE96 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		D8C8FBA12872D8D30048EE96 /* SettingsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTableViewCell.xib; sourceTree = "<group>"; };
 		D8C8FBA42872F6AA0048EE96 /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		D8C9415B288A71FA0053493D /* tblFavouriteCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tblFavouriteCell.swift; sourceTree = "<group>"; };
+		D8C9415C288A71FA0053493D /* tblFavouriteCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tblFavouriteCell.xib; sourceTree = "<group>"; };
 		D8F2CF0F286D71A50082B5F4 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		D8F2CF11286D87710082B5F4 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		D8F2CF14286D88970082B5F4 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
@@ -382,6 +394,7 @@
 				D8B8B1BB286AC9DA006AE1B5 /* Resources */,
 				D8B8B1BD286AD16C006AE1B5 /* App Fonts */,
 				D8615A6E2865D5E00067DD70 /* Info.plist */,
+				D8C6547928979BC70059EDF3 /* AppConstant.swift */,
 				D89D7F7C28817F2200B24D49 /* Extension */,
 			);
 			path = FoodyBites;
@@ -450,6 +463,8 @@
 		D89E5F4228743BE2000E613E /* CategoryCells */ = {
 			isa = PBXGroup;
 			children = (
+				D8C9415B288A71FA0053493D /* tblFavouriteCell.swift */,
+				D8C9415C288A71FA0053493D /* tblFavouriteCell.xib */,
 				D89E5F4328743C4D000E613E /* CategoryTableViewCell.swift */,
 				D89E5F4428743C4D000E613E /* CategoryTableViewCell.xib */,
 				D89FAE592875948400D8447E /* ExploreTableViewCell.swift */,
@@ -476,9 +491,19 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D8A0B8B32886C23A004EDCA9 /* ExploreCategory */ = {
+			isa = PBXGroup;
+			children = (
+				D8A0B8AF2886883B004EDCA9 /* ExploreCategoryCVC.swift */,
+				D8A0B8B02886883B004EDCA9 /* ExploreCategoryCVC.xib */,
+			);
+			path = ExploreCategory;
+			sourceTree = "<group>";
+		};
 		D8B4657A286AFA460093A6A4 /* Collection Cells */ = {
 			isa = PBXGroup;
 			children = (
+				D8A0B8B32886C23A004EDCA9 /* ExploreCategory */,
 				D89EAB552877126C00E9E6BC /* FilterCells */,
 				D89E5F3A2873FFF2000E613E /* Menu&PhotosCells */,
 				D8B4658C286B18900093A6A4 /* HomeCollectionCells */,
@@ -561,6 +586,7 @@
 				D83AE8842869AE3F002A69F9 /* FavouritesVC.swift */,
 				D8B8B1E3286ADBB0006AE1B5 /* ProfileVC.swift */,
 				D8C8FB942872C9D70048EE96 /* AddReviewVC.swift */,
+				0AB595992889E1DC00C5A470 /* RatingVC.swift */,
 				D89EAB43287706CE00E9E6BC /* HomeDetailsVC.swift */,
 				D89BA348287E9B0200D30681 /* TrendingRestaurantVC.swift */,
 			);
@@ -723,6 +749,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8C9415E288A71FA0053493D /* tblFavouriteCell.xib in Resources */,
 				D8C8FB932872B01F0048EE96 /* ReviewTableViewCell.xib in Resources */,
 				D89F495A28802355003DA4C6 /* tblFollowCell.xib in Resources */,
 				D8F2CF1D286DCDAF0082B5F4 /* LanguageTableViewCell.xib in Resources */,
@@ -755,6 +782,7 @@
 				D8B4657E286AFB530093A6A4 /* HomeFirstCollectionViewCell.xib in Resources */,
 				D8F2CF12286D87710082B5F4 /* Profile.storyboard in Resources */,
 				D8764EEF286C6D6000AAC92E /* FavouritesTableViewCell.xib in Resources */,
+				D8A0B8B22886883B004EDCA9 /* ExploreCategoryCVC.xib in Resources */,
 				D8C8FBA32872D8D30048EE96 /* SettingsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -910,10 +938,12 @@
 				D85A23DB286F221F00850807 /* FollowerTableViewCell.swift in Sources */,
 				D89EAB4B28770A8C00E9E6BC /* tblHomeDetailsCell.swift in Sources */,
 				D89EAB5328770FB500E9E6BC /* HomeMenuCollectionViewCell.swift in Sources */,
+				D8C9415D288A71FA0053493D /* tblFavouriteCell.swift in Sources */,
 				D8C8FB982872CB060048EE96 /* AddReviewTableViewCell.swift in Sources */,
 				D89FAE5B2875948400D8447E /* ExploreTableViewCell.swift in Sources */,
 				D8C552D828746F7100027AD3 /* ExploreCategoryVC.swift in Sources */,
 				D89E5F372873FDC0000E613E /* MenuVC.swift in Sources */,
+				D8A0B8B12886883B004EDCA9 /* ExploreCategoryCVC.swift in Sources */,
 				D83AE87F2869ADB0002A69F9 /* NotificationVC.swift in Sources */,
 				D8B46579286AE1DA0093A6A4 /* TabBarVC.swift in Sources */,
 				D8B8B1DD286AD411006AE1B5 /* ForgotPasswordVC.swift in Sources */,
@@ -925,6 +955,8 @@
 				D8B4657D286AFB530093A6A4 /* HomeFirstCollectionViewCell.swift in Sources */,
 				D8F2CF1C286DCDAF0082B5F4 /* LanguageTableViewCell.swift in Sources */,
 				D89E5F4528743C4D000E613E /* CategoryTableViewCell.swift in Sources */,
+				0AB5959A2889E1DC00C5A470 /* RatingVC.swift in Sources */,
+				D8C6547A28979BC70059EDF3 /* AppConstant.swift in Sources */,
 				D83AE8852869AE3F002A69F9 /* FavouritesVC.swift in Sources */,
 				D89E5F4028743AB5000E613E /* CategoryVC.swift in Sources */,
 				D89FAE602875A49A00D8447E /* FilterCollectionViewCell.swift in Sources */,
@@ -1040,7 +1072,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1096,7 +1129,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -1112,26 +1145,32 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JLW935Y7W3;
+				DEVELOPMENT_TEAM = QPQG3VFGZ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodyBites/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zobiwebsolutions.FoodyBites;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foodybites;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1141,26 +1180,32 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JLW935Y7W3;
+				DEVELOPMENT_TEAM = QPQG3VFGZ4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FoodyBites/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = zobiwebsolutions.FoodyBites;
+				PRODUCT_BUNDLE_IDENTIFIER = com.foodybites;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -1211,10 +1256,12 @@
 			baseConfigurationReference = 549CB65332026B0E761B491E /* Pods-FoodyBites-FoodyBitesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JLW935Y7W3;
+				DEVELOPMENT_TEAM = DPVF4423BG;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = zobiwebsolutions.FoodyBitesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1230,10 +1277,12 @@
 			baseConfigurationReference = 234612F7103EF442876CADF7 /* Pods-FoodyBites-FoodyBitesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = JLW935Y7W3;
+				DEVELOPMENT_TEAM = DPVF4423BG;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = zobiwebsolutions.FoodyBitesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

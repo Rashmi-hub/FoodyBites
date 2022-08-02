@@ -9,15 +9,25 @@ import UIKit
 
 class LanguageVC: UIViewController {
     @IBOutlet weak var tblLanguage: UITableView!
+    @IBOutlet weak var btnUpdate: UIButton!
+
     var arrayLanguage = ["Spanish","Chinese","Hindi","Arabic","Russina","Japanise","Purtagies","German"]
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Change Language"
         tblLanguage.delegate = self
         tblLanguage.dataSource = self
         tblLanguage.register(UINib.init(nibName: "LanguageTableViewCell", bundle: nil), forCellReuseIdentifier: "LanguageTableViewCell")
+        // Set right bar button item in navigation bar.
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Update", style: .done, target: self, action: #selector(btnUpdateClicked))
+        navigationItem.rightBarButtonItem?.tintColor = UIColor(named: "ClickEventColor")
+    }
+   
+    @IBAction func btnBackClicked(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func btnBackClicked(_ sender: Any) {
+    @IBAction func btnUpdateClicked(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -33,7 +43,7 @@ extension LanguageVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let label = UILabel.init(frame: CGRect.init(x: 20, y: 0, width: tableView.frame.size.width, height: 50))
+        let label = UILabel.init(frame: CGRect.init(x:10, y: 0, width: tableView.frame.size.width, height: 50))
         label.textColor = UIColor.lightGray
         label.font = UIFont(name: "JosefinSans-SemiBold", size: 18.0)
         label.textAlignment = .left

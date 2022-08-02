@@ -27,7 +27,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="HFt-5f-xKa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Qiu-N5-kt2"/>
                 <constraint firstAttribute="trailing" secondItem="HFt-5f-xKa" secondAttribute="trailing" id="TVn-hI-sNP"/>
@@ -42,6 +42,6 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="Man" width="141" height="132"/>
+        <image name="Man" width="126" height="125"/>
     </resources>
 </document>

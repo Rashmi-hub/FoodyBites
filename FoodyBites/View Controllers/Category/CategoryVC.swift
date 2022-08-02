@@ -15,13 +15,26 @@ class CategoryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Category"
+        self.navigationController?.isNavigationBarHidden = false
         tblCategory.delegate = self
         tblCategory.dataSource = self
         tblCategory.register(UINib.init(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "CategoryTableViewCell")
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        navigationController?.navigationBar.tintColor = UIColor.black
     }
+    
     
     override func viewWillAppear(_ animated: Bool) {
         self.tblCategory.separatorStyle = .none
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        navigationController?.navigationBar.tintColor = UIColor.black
+        let attributes: AnyObject = [ NSAttributedString.Key.foregroundColor: UIColor.black] as AnyObject
+        self.navigationController?.navigationBar.titleTextAttributes = attributes as? [String : AnyObject] as? [NSAttributedString.Key : Any]
+        //Set Font Size
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "JosefinSans-SemiBold", size: 24.0)!];
     }
     
     static func instance() -> CategoryVC {
@@ -45,14 +58,13 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
         cell.imgfg.image = UIImage(named: img1)
         let imgName = arrayName[indexPath.row]
         cell.imgName.image = UIImage(named: imgName)
-        //cell.layer.cornerRadius = 20
         cell.imgfg.layer.cornerRadius = 12
         cell.imgbg.layer.cornerRadius = 12
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        return 92.0
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

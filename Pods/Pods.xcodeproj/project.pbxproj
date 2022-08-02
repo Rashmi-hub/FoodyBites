@@ -7,122 +7,209 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1C6156B7023F7F69398B4119A0AA492B /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1DF35E0E63321E5F772424D9EE48B1 /* CosmosText.swift */; };
-		209D9DD6A82F26B8032A43B060B5D164 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		2FCFA7D464D486EC1E486FFF2C21B4ED /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE73B1AFBB1A8CB564DB09EA1BE2942E /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		06FFE460D79ABD60F42C0332EB3BEE4D /* IQTitleBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F0C74E99CEBDA92172EDA3561D39C40 /* IQTitleBarButtonItem.m */; };
+		0A48DAEFF3B2B76B6D59ECEACCF349DB /* IQKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BD596DD6B081656C7CA3274FC04DFBC8 /* IQKeyboardManager.m */; };
+		10BBF53FAF4C4845C71FF1D16A1F2185 /* IQPreviousNextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0573288FC6B08572B41F6137ECA062E6 /* IQPreviousNextView.m */; };
+		14F350D1AE912096B4B04F9A0C6BAABE /* IQToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = FCADAFFCC8D4874A24E78F0762A7A0AE /* IQToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C6156B7023F7F69398B4119A0AA492B /* CosmosText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2F90E8492B9BDB7193B3989970369D /* CosmosText.swift */; };
+		209D9DD6A82F26B8032A43B060B5D164 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+		2457FC29D9DFC58923D6750CF1096A07 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840FA0B75AF62912A30DDC66B647ED98 /* CoreGraphics.framework */; };
+		245C3EFCCB26556535EC3F082169D7F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+		293A4E38AD5968B32012FDCC10D5E3AC /* IQKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = C6875D4A06D7A0066E0EEC0D0740D910 /* IQKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F822E3E2AEAA87BAD9A511F5487BA4B /* IQBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C37490F7089863D07D74525B9B481A02 /* IQBarButtonItem.m */; };
+		2FCFA7D464D486EC1E486FFF2C21B4ED /* Cosmos-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C22B342DFE822F863C092C9968DF9B8A /* Cosmos-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		376283CB1C2F4FBFDEB918476761CBF2 /* IQKeyboardManagerConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 20F003040615DBF099E2FCB7474F77D8 /* IQKeyboardManagerConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3A5E751E5D684DE8F34433773EF9F259 /* IQTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = B3DDCBA86F80D0EBF9D0D23841D09138 /* IQTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3C63DF222FD6B77E855A172B1CB46771 /* IQTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = E6128588B5F7023B71143F6438AE6308 /* IQTextView.m */; };
 		3C6F75DE73FFBBCE26872D7F3CA6A8E7 /* Pods-FoodyBitesTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 45A30DB1230CEF3A9F98F08A98EFA957 /* Pods-FoodyBitesTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E410558A06008A95E19C2FE1D5E014E /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B35696210957ADE15680CA907CD0C77 /* CosmosRating.swift */; };
-		449B7D4D4BD118C480786A347A377054 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACFFC8A6CF484661158E175E3BA996B /* CosmosTouchTarget.swift */; };
-		4D8675E7F1C6254904557B7FB84E1C51 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B148CC2C6AA832097607C6D9E1130A /* CosmosSettings.swift */; };
-		5E87677262463376144E8B5F6916FCCB /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97A70406522118CCB5BDCB099CDB2C36 /* StarFillMode.swift */; };
-		60D9E908FA617586C98C9EE45100431C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		61773DD4962BFA6D7E38DD8A9D998A8A /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174979D91E7D6F800B205ABDD3EB318F /* CosmosDefaultSettings.swift */; };
-		67318BB3E280E0D8FB9161E5557B71E3 /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E9C6787280DFA6AA5C600055EE6EA4D /* Cosmos-dummy.m */; };
-		772B7FA4384C442360975E95D12383BA /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F95F69EA32AB0728A2CCCF5ECBA773C /* CosmosAccessibility.swift */; };
-		7AA4F48458A149B12BCF7E8EB147E25C /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCA06310EBE16A09D01FECACF9824A3 /* CosmosTouch.swift */; };
-		7E298ECE9B23835D17446526E27D2D67 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F11A167F3AA6F45EEA463328BB8EE25 /* StarLayer.swift */; };
-		8322D938B4C21C24E70FBA1B95797AC9 /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32E3874A468C60BEB281D0A1E213B262 /* CosmosSize.swift */; };
+		3E410558A06008A95E19C2FE1D5E014E /* CosmosRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37F82BEF210F2818921B2ED177E9085 /* CosmosRating.swift */; };
+		43B3A6E418AF6D457318D5DFD64B22B7 /* IQPreviousNextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1CECF2FA5F56F47B3D7A89FC4F578099 /* IQPreviousNextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		449B7D4D4BD118C480786A347A377054 /* CosmosTouchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE377F5DA1EE035E7A876A418E982D39 /* CosmosTouchTarget.swift */; };
+		47E70B39D50CD49CB93F05C8A29A71FE /* IQUIViewController+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 28EB6EAEF0EBFED7D2B9A92DEAD74AC5 /* IQUIViewController+Additions.m */; };
+		4D44DCC513AD5E580D92EDDF2D6A45A0 /* IQUITextFieldView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = D8DCAC9C85E05368E704275226CA438A /* IQUITextFieldView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D8675E7F1C6254904557B7FB84E1C51 /* CosmosSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0428AD211157D05152A873EADADD7DC /* CosmosSettings.swift */; };
+		50BB62FF2BBCD7A66EC83B14474ECECD /* Pods-FoodyBites-FoodyBitesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72FDE28D7C67D2BF64D84690577977DD /* Pods-FoodyBites-FoodyBitesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		56F69E27093A6FF4B13AACEA76827231 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A42DBD2F42D55606EEBA514009498B87 /* QuartzCore.framework */; };
+		571898C9118E0B2E87F77CD223979CC4 /* IQKeyboardReturnKeyHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E69F53BDE3462E5E103F7DDB8E898EA /* IQKeyboardReturnKeyHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E87677262463376144E8B5F6916FCCB /* StarFillMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEE556D0DC577AF32ADDC8B4BC41A79E /* StarFillMode.swift */; };
+		61773DD4962BFA6D7E38DD8A9D998A8A /* CosmosDefaultSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90B6A069D42D952029C58082A638B98F /* CosmosDefaultSettings.swift */; };
+		67318BB3E280E0D8FB9161E5557B71E3 /* Cosmos-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B5BCCD8F62FCC539279D26C4A45CF03 /* Cosmos-dummy.m */; };
+		6C8D636FC19EF52AC1C6C137034BD842 /* IQUIScrollView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 54E2385C347DC76B5AEA10F70E3C0A77 /* IQUIScrollView+Additions.m */; };
+		768C7D8165465E63F576F9135C572829 /* IQKeyboardManagerConstantsInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = F2AEFE2AD10F850F6DE6616149FD69E5 /* IQKeyboardManagerConstantsInternal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		772B7FA4384C442360975E95D12383BA /* CosmosAccessibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68EB9D5BC141E1DD3EE15D168B845355 /* CosmosAccessibility.swift */; };
+		77F56E4B8630FEEF0B934FC9F86852AE /* IQUIView+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5943D292182F897AF9480F99E57C0AD /* IQUIView+Hierarchy.m */; };
+		7AA4F48458A149B12BCF7E8EB147E25C /* CosmosTouch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71887A565E6A8F1ED8B8E58F1CE37A0 /* CosmosTouch.swift */; };
+		7E298ECE9B23835D17446526E27D2D67 /* StarLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E44CAEF356FC88016FE9B13E8F13518 /* StarLayer.swift */; };
+		8322D938B4C21C24E70FBA1B95797AC9 /* CosmosSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = E029B89B8D90FA0523B1326EDEDB034A /* CosmosSize.swift */; };
+		8454236A712B95D675D8C24BE3EE7149 /* Pods-FoodyBites-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 347E7669C552D216AD2AAA5C00F5DEA8 /* Pods-FoodyBites-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8635CBB5C7CECBFF7FA19FD122F96F79 /* Pods-FoodyBitesTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 277EABBA83D8D1DEA5850F71C4534C4F /* Pods-FoodyBitesTests-dummy.m */; };
-		891A07858CCB0034997356363DCDB22B /* Pods-FoodyBites-FoodyBitesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A13DEAD9109F62FF09EBD1A48B53E33 /* Pods-FoodyBites-FoodyBitesUITests-dummy.m */; };
-		8FBF28FBBA66B62246DB682239570E19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		9755F83E9DE9BA2CC07496C16AF80B42 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5897E31E1EC97ED9A077A7DE06FFED3 /* RightToLeft.swift */; };
-		99DB653A1F70EAEC3490B69E4AC9011F /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7148BEACE4E8E4A331749E74D5874D52 /* CosmosLayerHelper.swift */; };
-		A8540432E1CABEBAE956846D463E4F73 /* Pods-FoodyBites-FoodyBitesUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 72FDE28D7C67D2BF64D84690577977DD /* Pods-FoodyBites-FoodyBitesUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		ABFB9BF862F602531FE8131A350542B0 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3EFD3F770945B6DE9CEB6DFFBAC2C00 /* CosmosLayers.swift */; };
-		BFD3E314DDEC3E471FF8A8F44EE619DB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		CB4D7FEF62D7943C6E236467F3C516C1 /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6E7DAF60D8E62DA62B2CB23D43E16B /* CosmosLocalizedRating.swift */; };
-		EC1899EF909D17F47C5C0C2064BD2533 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F75C17AB2E3DBBADD82C283A9920F8 /* CosmosView.swift */; };
-		FB7EC8860175AB59124A29F98276C574 /* Pods-FoodyBites-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 347E7669C552D216AD2AAA5C00F5DEA8 /* Pods-FoodyBites-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF91A6758E01C59E3FC806C077DB014F /* Pods-FoodyBites-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA35FFF0A14D4A4DCF5E07F9DE6E9F4 /* Pods-FoodyBites-dummy.m */; };
+		8A97919047EDE26B475E75C37FCC743E /* Pods-FoodyBites-FoodyBitesUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A13DEAD9109F62FF09EBD1A48B53E33 /* Pods-FoodyBites-FoodyBitesUITests-dummy.m */; };
+		8B566763930AD11F2945B71E4B2754A2 /* IQKeyboardManager-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0E32922CDD4CEAA00718209AF4BE051F /* IQKeyboardManager-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8FBF28FBBA66B62246DB682239570E19 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+		92A2BA5CE2E0F13CF32B96118A54B298 /* IQNSArray+Sort.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A0D464BED1D6C4D93E1EE5AA954923 /* IQNSArray+Sort.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9755F83E9DE9BA2CC07496C16AF80B42 /* RightToLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4707893E02962495FCCAD63C5C80FB15 /* RightToLeft.swift */; };
+		9869BE90A4E205295E92E1930E059FC0 /* IQUIView+Hierarchy.h in Headers */ = {isa = PBXBuildFile; fileRef = 068A3C3862DBB6B0138CF0B6A0EB7062 /* IQUIView+Hierarchy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		99DB653A1F70EAEC3490B69E4AC9011F /* CosmosLayerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9C22E89DB1CF61574E36BFD91FB3603 /* CosmosLayerHelper.swift */; };
+		9EE42EA1D5742891C0A2718A3BFE0F4A /* IQBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DE6426150C5962381AE1C792B7C2D27 /* IQBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A0AF68FE7C423F0A669441A25935D049 /* IQNSArray+Sort.m in Sources */ = {isa = PBXBuildFile; fileRef = 78A92CE03035D2B5E789F62D13CDC6A1 /* IQNSArray+Sort.m */; };
+		A0C2891A8EE757E199310C3601A66130 /* IQUIScrollView+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 21A8E121DBAF5CD2B7489A00481CEF09 /* IQUIScrollView+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A25CA3F2540143EFA8C6D6C45845B79A /* IQKeyboardReturnKeyHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB77BB89C7E01AB3B69635F75D1EC5D /* IQKeyboardReturnKeyHandler.m */; };
+		ABFB9BF862F602531FE8131A350542B0 /* CosmosLayers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC58A0E1135D3CC1C566D6D82E82B44 /* CosmosLayers.swift */; };
+		B34EE15CECE3B3F06DC0C1BB1FFA61C1 /* IQUIView+IQKeyboardToolbar.h in Headers */ = {isa = PBXBuildFile; fileRef = 90AD2CE2D9115C41243E529C6580E572 /* IQUIView+IQKeyboardToolbar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C087DC04B44A00CB67A3C701AB68F634 /* Pods-FoodyBites-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECA35FFF0A14D4A4DCF5E07F9DE6E9F4 /* Pods-FoodyBites-dummy.m */; };
+		C2E3562A9EDADE0BCFD5D54324629F46 /* IQUIViewController+Additions.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BE00C70A8004E22522FA2E84D5D5F32 /* IQUIViewController+Additions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB17DEC80F4B294AC595CF0461C4FC70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+		CB4D7FEF62D7943C6E236467F3C516C1 /* CosmosLocalizedRating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63246641771A0042F08B90F2577D1BC0 /* CosmosLocalizedRating.swift */; };
+		CCECE87431A451056454222F247B89D5 /* IQUITextFieldView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4308668FA95B3F3EBF0F4D8DEF5FFE /* IQUITextFieldView+Additions.m */; };
+		DDEBC6CD2F36B3D7445C6C419FC34102 /* IQUIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B8D5124294375A3EA1ABDB530CE15 /* IQUIView+IQKeyboardToolbar.m */; };
+		E26037F673860BF7384B6901150A2CA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */; };
+		E3226C305B708F68460A437B3A73C0DE /* IQToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9512D1A1A7CA8EA3C24858F801DA32D1 /* IQToolbar.m */; };
+		EC1899EF909D17F47C5C0C2064BD2533 /* CosmosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE0987CB4F20D04B01BAB9404CC21211 /* CosmosView.swift */; };
+		F4F723087ED20D05F02C8FF1562305CA /* IQKeyboardManager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B2FD82C407CDD85F522A9A7A74B0D6 /* IQKeyboardManager-dummy.m */; };
+		F677A7103D7C898C2FF7998DACFAF54B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04D60AC13D33197690A05C641925DDDA /* UIKit.framework */; };
+		F73C6B8F53A58263A375518A8BFF974F /* IQTitleBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = D16130FFDED5DCA3C71ADC1848BEA3F2 /* IQTitleBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AB6C766FF92ABA4B8BB1C44E2EFA7EFB /* PBXContainerItemProxy */ = {
+		34F7B44A5E3FED07A025902583350F00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00F31BD5217A20974B5E9AAC6256D98E;
 			remoteInfo = Cosmos;
 		};
-		BA19239EE7DE2310B2CDD0A85DC64F76 /* PBXContainerItemProxy */ = {
+		484DF214EE8D77638BBC925ED061B1BC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EBFCC2B7A9B848D405CE4304CE23B1B7;
 			remoteInfo = "Pods-FoodyBites";
 		};
-		DB133BD0CCA9A1E2AA893A777FCA2DB6 /* PBXContainerItemProxy */ = {
+		591E4C45D1E4A6F58362B2613DA4568D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA456CB50E371584C11231929A0971E;
+			remoteInfo = IQKeyboardManager;
+		};
+		B4D46C7815FD90DBE38D84B6A3CD0D80 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 00F31BD5217A20974B5E9AAC6256D98E;
 			remoteInfo = Cosmos;
 		};
+		E694359B6D67724AF80974494D7B8325 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBA456CB50E371584C11231929A0971E;
+			remoteInfo = IQKeyboardManager;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		003629AE2A0C269D8850B0F7E393FF2E /* Pods-FoodyBites.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FoodyBites.modulemap"; sourceTree = "<group>"; };
+		04D60AC13D33197690A05C641925DDDA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		0573288FC6B08572B41F6137ECA062E6 /* IQPreviousNextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQPreviousNextView.m; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.m; sourceTree = "<group>"; };
 		05C4280976BF93DA8B36818DE2E2A5E0 /* Cosmos */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Cosmos; path = Cosmos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E29BC44317FF962374F2AB1B47271F3 /* Cosmos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.debug.xcconfig; sourceTree = "<group>"; };
-		174979D91E7D6F800B205ABDD3EB318F /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
-		1ACFFC8A6CF484661158E175E3BA996B /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
+		068A3C3862DBB6B0138CF0B6A0EB7062 /* IQUIView+Hierarchy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+Hierarchy.h"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.h"; sourceTree = "<group>"; };
+		0C99D028FCC2CDC9495B0C14D63C5068 /* Cosmos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cosmos-Info.plist"; sourceTree = "<group>"; };
+		0E32922CDD4CEAA00718209AF4BE051F /* IQKeyboardManager-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-umbrella.h"; sourceTree = "<group>"; };
+		0E44CAEF356FC88016FE9B13E8F13518 /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
+		1BF96CAD7BB8CB12FC319E1B9B86278F /* IQKeyboardManager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.debug.xcconfig; sourceTree = "<group>"; };
+		1CECF2FA5F56F47B3D7A89FC4F578099 /* IQPreviousNextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQPreviousNextView.h; path = IQKeyboardManager/IQToolbar/IQPreviousNextView.h; sourceTree = "<group>"; };
+		20F003040615DBF099E2FCB7474F77D8 /* IQKeyboardManagerConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstants.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstants.h; sourceTree = "<group>"; };
+		21A8E121DBAF5CD2B7489A00481CEF09 /* IQUIScrollView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIScrollView+Additions.h"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.h"; sourceTree = "<group>"; };
 		277EABBA83D8D1DEA5850F71C4534C4F /* Pods-FoodyBitesTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoodyBitesTests-dummy.m"; sourceTree = "<group>"; };
-		2E9C6787280DFA6AA5C600055EE6EA4D /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
-		2F95F69EA32AB0728A2CCCF5ECBA773C /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
-		31F75C17AB2E3DBBADD82C283A9920F8 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
-		32E3874A468C60BEB281D0A1E213B262 /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
+		28EB6EAEF0EBFED7D2B9A92DEAD74AC5 /* IQUIViewController+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIViewController+Additions.m"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.m"; sourceTree = "<group>"; };
+		2B5BCCD8F62FCC539279D26C4A45CF03 /* Cosmos-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Cosmos-dummy.m"; sourceTree = "<group>"; };
+		2C4308668FA95B3F3EBF0F4D8DEF5FFE /* IQUITextFieldView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUITextFieldView+Additions.m"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.m"; sourceTree = "<group>"; };
 		347E7669C552D216AD2AAA5C00F5DEA8 /* Pods-FoodyBites-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoodyBites-umbrella.h"; sourceTree = "<group>"; };
 		3ACDF17C57137F24E1CAB82A6B958809 /* Pods-FoodyBites-FoodyBitesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodyBites-FoodyBitesUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3E69F53BDE3462E5E103F7DDB8E898EA /* IQKeyboardReturnKeyHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardReturnKeyHandler.h; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.h; sourceTree = "<group>"; };
 		4059D921FA166310670AA674090DBB7E /* Pods-FoodyBites-FoodyBitesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodyBites-FoodyBitesUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		45A30DB1230CEF3A9F98F08A98EFA957 /* Pods-FoodyBitesTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoodyBitesTests-umbrella.h"; sourceTree = "<group>"; };
+		4707893E02962495FCCAD63C5C80FB15 /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
 		4A13DEAD9109F62FF09EBD1A48B53E33 /* Pods-FoodyBites-FoodyBitesUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoodyBites-FoodyBitesUITests-dummy.m"; sourceTree = "<group>"; };
-		4F11A167F3AA6F45EEA463328BB8EE25 /* StarLayer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarLayer.swift; path = Cosmos/StarLayer.swift; sourceTree = "<group>"; };
+		4E2F90E8492B9BDB7193B3989970369D /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
+		4E821DE7C70DF832D299E575B2A9BB15 /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
 		548B8DB58BA0CD8674724B0499C6BC0B /* Pods-FoodyBites-FoodyBitesUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoodyBites-FoodyBitesUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		54DE297CC408E1838022D6E26AF2F39D /* Pods-FoodyBites-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodyBites-frameworks.sh"; sourceTree = "<group>"; };
-		569F011501DB1409E3120F376B6B7D0C /* Cosmos-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-prefix.pch"; sourceTree = "<group>"; };
+		54E2385C347DC76B5AEA10F70E3C0A77 /* IQUIScrollView+Additions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIScrollView+Additions.m"; path = "IQKeyboardManager/Categories/IQUIScrollView+Additions.m"; sourceTree = "<group>"; };
+		5BE00C70A8004E22522FA2E84D5D5F32 /* IQUIViewController+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIViewController+Additions.h"; path = "IQKeyboardManager/Categories/IQUIViewController+Additions.h"; sourceTree = "<group>"; };
+		5F0C74E99CEBDA92172EDA3561D39C40 /* IQTitleBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTitleBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.m; sourceTree = "<group>"; };
 		6177976DD1DE5A76338CD0D4FC01E5CD /* Pods-FoodyBitesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodyBitesTests.release.xcconfig"; sourceTree = "<group>"; };
 		6240291379A4AFB27E3DE34A2F1A60D9 /* Pods-FoodyBites-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoodyBites-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7148BEACE4E8E4A331749E74D5874D52 /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
+		63246641771A0042F08B90F2577D1BC0 /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
+		68EB9D5BC141E1DD3EE15D168B845355 /* CosmosAccessibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosAccessibility.swift; path = Cosmos/CosmosAccessibility.swift; sourceTree = "<group>"; };
 		719D6C7F4106C35370D6AFF85B6915FA /* Pods-FoodyBites-FoodyBitesUITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FoodyBites-FoodyBitesUITests"; path = Pods_FoodyBites_FoodyBitesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		72FDE28D7C67D2BF64D84690577977DD /* Pods-FoodyBites-FoodyBitesUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-FoodyBites-FoodyBitesUITests-umbrella.h"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		78A92CE03035D2B5E789F62D13CDC6A1 /* IQNSArray+Sort.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQNSArray+Sort.m"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.m"; sourceTree = "<group>"; };
+		79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7A01878C06D8AEC94AE160E9952A4231 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cosmos.modulemap; sourceTree = "<group>"; };
+		7DE6426150C5962381AE1C792B7C2D27 /* IQBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.h; sourceTree = "<group>"; };
+		7F9E7018F87B6C7457FAB7EA36D861B3 /* Cosmos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.debug.xcconfig; sourceTree = "<group>"; };
 		80CBEA27DAB5D701039F900FE5F3E84D /* Pods-FoodyBites-FoodyBitesUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodyBites-FoodyBitesUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		840FA0B75AF62912A30DDC66B647ED98 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		864A94EF0EB5DFEC5C1104AF6637B1EF /* Pods-FoodyBites */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FoodyBites"; path = Pods_FoodyBites.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		895D99E95300DBD9C6DE9FFA5BC2F8DA /* Pods-FoodyBites-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodyBites-acknowledgements.plist"; sourceTree = "<group>"; };
+		90AD2CE2D9115C41243E529C6580E572 /* IQUIView+IQKeyboardToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUIView+IQKeyboardToolbar.h"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.h"; sourceTree = "<group>"; };
+		90B6A069D42D952029C58082A638B98F /* CosmosDefaultSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosDefaultSettings.swift; path = Cosmos/CosmosDefaultSettings.swift; sourceTree = "<group>"; };
+		926B8D5124294375A3EA1ABDB530CE15 /* IQUIView+IQKeyboardToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+IQKeyboardToolbar.m"; path = "IQKeyboardManager/IQToolbar/IQUIView+IQKeyboardToolbar.m"; sourceTree = "<group>"; };
 		928BD09549978515A0E2169F8A703E00 /* Pods-FoodyBitesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodyBitesTests.debug.xcconfig"; sourceTree = "<group>"; };
-		95B148CC2C6AA832097607C6D9E1130A /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
-		97A70406522118CCB5BDCB099CDB2C36 /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
-		9B35696210957ADE15680CA907CD0C77 /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		9512D1A1A7CA8EA3C24858F801DA32D1 /* IQToolbar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQToolbar.m; path = IQKeyboardManager/IQToolbar/IQToolbar.m; sourceTree = "<group>"; };
+		98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IQKeyboardManager; path = IQKeyboardManager.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DF46B75224E4EDF18156472CA0066D6 /* IQKeyboardManager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IQKeyboardManager.release.xcconfig; sourceTree = "<group>"; };
 		A0041F3AFF98CA596A260ACCC9DB8A41 /* Pods-FoodyBites.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodyBites.debug.xcconfig"; sourceTree = "<group>"; };
+		A42DBD2F42D55606EEBA514009498B87 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		A9F769DC72B7D29B25A36BBF0A193428 /* Pods-FoodyBites-FoodyBitesUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-FoodyBites-FoodyBitesUITests-frameworks.sh"; sourceTree = "<group>"; };
-		AF1DF35E0E63321E5F772424D9EE48B1 /* CosmosText.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosText.swift; path = Cosmos/CosmosText.swift; sourceTree = "<group>"; };
+		AE377F5DA1EE035E7A876A418E982D39 /* CosmosTouchTarget.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouchTarget.swift; path = Cosmos/Helpers/CosmosTouchTarget.swift; sourceTree = "<group>"; };
 		AF425FC1CFFCCC28CDE8E5D811DA752B /* Pods-FoodyBitesTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodyBitesTests-Info.plist"; sourceTree = "<group>"; };
+		AFDC8D52308E5DAEE9BA99E08A7E9B1A /* Cosmos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.release.xcconfig; sourceTree = "<group>"; };
+		B37F82BEF210F2818921B2ED177E9085 /* CosmosRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosRating.swift; path = Cosmos/CosmosRating.swift; sourceTree = "<group>"; };
+		B3DDCBA86F80D0EBF9D0D23841D09138 /* IQTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTextView.h; path = IQKeyboardManager/IQTextView/IQTextView.h; sourceTree = "<group>"; };
+		B5B2FD82C407CDD85F522A9A7A74B0D6 /* IQKeyboardManager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IQKeyboardManager-dummy.m"; sourceTree = "<group>"; };
 		B662E8AB46414F20F136E843600F075A /* Pods-FoodyBitesTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-FoodyBitesTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		B74AB5CCC2C95955BF91BB3AAB480154 /* IQKeyboardManager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IQKeyboardManager-prefix.pch"; sourceTree = "<group>"; };
 		B78ACA02CBC214CDE29839301E5583F0 /* Pods-FoodyBitesTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FoodyBitesTests.modulemap"; sourceTree = "<group>"; };
 		B91D1ADC536792C71D4AAC09C210F9A7 /* Pods-FoodyBites.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-FoodyBites.release.xcconfig"; sourceTree = "<group>"; };
-		BCCA06310EBE16A09D01FECACF9824A3 /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
+		BD596DD6B081656C7CA3274FC04DFBC8 /* IQKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardManager.m; path = IQKeyboardManager/IQKeyboardManager.m; sourceTree = "<group>"; };
+		BEE556D0DC577AF32ADDC8B4BC41A79E /* StarFillMode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StarFillMode.swift; path = Cosmos/StarFillMode.swift; sourceTree = "<group>"; };
+		BFC58A0E1135D3CC1C566D6D82E82B44 /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
+		C16D49A6C2C7E8DAB6F8B811425D2563 /* IQKeyboardManager.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IQKeyboardManager.modulemap; sourceTree = "<group>"; };
+		C22B342DFE822F863C092C9968DF9B8A /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
+		C37490F7089863D07D74525B9B481A02 /* IQBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQBarButtonItem.m; path = IQKeyboardManager/IQToolbar/IQBarButtonItem.m; sourceTree = "<group>"; };
 		C588CF3D70B50CF816A5013C70DD7A51 /* Pods-FoodyBites-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodyBites-Info.plist"; sourceTree = "<group>"; };
+		C6875D4A06D7A0066E0EEC0D0740D910 /* IQKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManager.h; path = IQKeyboardManager/IQKeyboardManager.h; sourceTree = "<group>"; };
+		D0428AD211157D05152A873EADADD7DC /* CosmosSettings.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSettings.swift; path = Cosmos/CosmosSettings.swift; sourceTree = "<group>"; };
+		D16130FFDED5DCA3C71ADC1848BEA3F2 /* IQTitleBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQTitleBarButtonItem.h; path = IQKeyboardManager/IQToolbar/IQTitleBarButtonItem.h; sourceTree = "<group>"; };
 		D288CE9D94772523E77E5F090D0C05E1 /* Pods-FoodyBites-FoodyBitesUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodyBites-FoodyBitesUITests-Info.plist"; sourceTree = "<group>"; };
+		D8DCAC9C85E05368E704275226CA438A /* IQUITextFieldView+Additions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQUITextFieldView+Additions.h"; path = "IQKeyboardManager/Categories/IQUITextFieldView+Additions.h"; sourceTree = "<group>"; };
 		DC4D899451C0A5F9DF2855271115DA6C /* Pods-FoodyBitesTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-FoodyBitesTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E3EFD3F770945B6DE9CEB6DFFBAC2C00 /* CosmosLayers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayers.swift; path = Cosmos/CosmosLayers.swift; sourceTree = "<group>"; };
-		E5B6A643470459BDAF78465CA50A84F4 /* Cosmos.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Cosmos.modulemap; sourceTree = "<group>"; };
-		EA6E7DAF60D8E62DA62B2CB23D43E16B /* CosmosLocalizedRating.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLocalizedRating.swift; path = Cosmos/CosmosLocalizedRating.swift; sourceTree = "<group>"; };
+		E029B89B8D90FA0523B1326EDEDB034A /* CosmosSize.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosSize.swift; path = Cosmos/CosmosSize.swift; sourceTree = "<group>"; };
+		E5943D292182F897AF9480F99E57C0AD /* IQUIView+Hierarchy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "IQUIView+Hierarchy.m"; path = "IQKeyboardManager/Categories/IQUIView+Hierarchy.m"; sourceTree = "<group>"; };
+		E6128588B5F7023B71143F6438AE6308 /* IQTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQTextView.m; path = IQKeyboardManager/IQTextView/IQTextView.m; sourceTree = "<group>"; };
+		E71887A565E6A8F1ED8B8E58F1CE37A0 /* CosmosTouch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosTouch.swift; path = Cosmos/CosmosTouch.swift; sourceTree = "<group>"; };
+		E8C0DECAA68BB07652BC8FC5C3E3A809 /* IQKeyboardManager-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IQKeyboardManager-Info.plist"; sourceTree = "<group>"; };
+		E9C22E89DB1CF61574E36BFD91FB3603 /* CosmosLayerHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosLayerHelper.swift; path = Cosmos/CosmosLayerHelper.swift; sourceTree = "<group>"; };
 		ECA35FFF0A14D4A4DCF5E07F9DE6E9F4 /* Pods-FoodyBites-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-FoodyBites-dummy.m"; sourceTree = "<group>"; };
-		F39EEA0C4D40303552A248CC69340F49 /* Cosmos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Cosmos.release.xcconfig; sourceTree = "<group>"; };
-		F5897E31E1EC97ED9A077A7DE06FFED3 /* RightToLeft.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RightToLeft.swift; path = Cosmos/Helpers/RightToLeft.swift; sourceTree = "<group>"; };
+		EE0987CB4F20D04B01BAB9404CC21211 /* CosmosView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CosmosView.swift; path = Cosmos/CosmosView.swift; sourceTree = "<group>"; };
+		EFB77BB89C7E01AB3B69635F75D1EC5D /* IQKeyboardReturnKeyHandler.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IQKeyboardReturnKeyHandler.m; path = IQKeyboardManager/IQKeyboardReturnKeyHandler.m; sourceTree = "<group>"; };
+		F2AEFE2AD10F850F6DE6616149FD69E5 /* IQKeyboardManagerConstantsInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQKeyboardManagerConstantsInternal.h; path = IQKeyboardManager/Constants/IQKeyboardManagerConstantsInternal.h; sourceTree = "<group>"; };
+		F6A0D464BED1D6C4D93E1EE5AA954923 /* IQNSArray+Sort.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "IQNSArray+Sort.h"; path = "IQKeyboardManager/Categories/IQNSArray+Sort.h"; sourceTree = "<group>"; };
 		FAF823B65652E8BC63BCEF276223EFF8 /* Pods-FoodyBitesTests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-FoodyBitesTests"; path = Pods_FoodyBitesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB41A1AC4E8C3D5378B076365887444A /* Pods-FoodyBites-FoodyBitesUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-FoodyBites-FoodyBitesUITests.modulemap"; sourceTree = "<group>"; };
-		FE73B1AFBB1A8CB564DB09EA1BE2942E /* Cosmos-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Cosmos-umbrella.h"; sourceTree = "<group>"; };
-		FEA6041AC6BE050FAEDA843AE108C4CD /* Cosmos-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Cosmos-Info.plist"; sourceTree = "<group>"; };
+		FCADAFFCC8D4874A24E78F0762A7A0AE /* IQToolbar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IQToolbar.h; path = IQKeyboardManager/IQToolbar/IQToolbar.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		39F06B3A7276E86E42F98033DE89A332 /* Frameworks */ = {
+		00CB833AA4B9D61BDB3E004DC0D831E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				60D9E908FA617586C98C9EE45100431C /* Foundation.framework in Frameworks */,
+				CB17DEC80F4B294AC595CF0461C4FC70 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,11 +221,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		70908831244D5627FCE538B0D5FE96E4 /* Frameworks */ = {
+		7D33780B948A3E4364412C5BC201A0CD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFD3E314DDEC3E471FF8A8F44EE619DB /* Foundation.framework in Frameworks */,
+				2457FC29D9DFC58923D6750CF1096A07 /* CoreGraphics.framework in Frameworks */,
+				245C3EFCCB26556535EC3F082169D7F6 /* Foundation.framework in Frameworks */,
+				56F69E27093A6FF4B13AACEA76827231 /* QuartzCore.framework in Frameworks */,
+				F677A7103D7C898C2FF7998DACFAF54B /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEBEC2BD772B1243C632A35F2E431966 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E26037F673860BF7384B6901150A2CA9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,20 +251,70 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1EEF3410A7BAA1DA5F110A17B8CD6B19 /* Pods */ = {
+		1B4B63530FF9106251470B48867E9064 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E8B1D41F350B4C0A5CC6FD8E8873DED5 /* Cosmos */,
+				7A01878C06D8AEC94AE160E9952A4231 /* Cosmos.modulemap */,
+				2B5BCCD8F62FCC539279D26C4A45CF03 /* Cosmos-dummy.m */,
+				0C99D028FCC2CDC9495B0C14D63C5068 /* Cosmos-Info.plist */,
+				4E821DE7C70DF832D299E575B2A9BB15 /* Cosmos-prefix.pch */,
+				C22B342DFE822F863C092C9968DF9B8A /* Cosmos-umbrella.h */,
+				7F9E7018F87B6C7457FAB7EA36D861B3 /* Cosmos.debug.xcconfig */,
+				AFDC8D52308E5DAEE9BA99E08A7E9B1A /* Cosmos.release.xcconfig */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/Cosmos";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		1C140770066D7AA0480D4D68CD02EECE /* Cosmos */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+				68EB9D5BC141E1DD3EE15D168B845355 /* CosmosAccessibility.swift */,
+				90B6A069D42D952029C58082A638B98F /* CosmosDefaultSettings.swift */,
+				E9C22E89DB1CF61574E36BFD91FB3603 /* CosmosLayerHelper.swift */,
+				BFC58A0E1135D3CC1C566D6D82E82B44 /* CosmosLayers.swift */,
+				63246641771A0042F08B90F2577D1BC0 /* CosmosLocalizedRating.swift */,
+				B37F82BEF210F2818921B2ED177E9085 /* CosmosRating.swift */,
+				D0428AD211157D05152A873EADADD7DC /* CosmosSettings.swift */,
+				E029B89B8D90FA0523B1326EDEDB034A /* CosmosSize.swift */,
+				4E2F90E8492B9BDB7193B3989970369D /* CosmosText.swift */,
+				E71887A565E6A8F1ED8B8E58F1CE37A0 /* CosmosTouch.swift */,
+				AE377F5DA1EE035E7A876A418E982D39 /* CosmosTouchTarget.swift */,
+				EE0987CB4F20D04B01BAB9404CC21211 /* CosmosView.swift */,
+				4707893E02962495FCCAD63C5C80FB15 /* RightToLeft.swift */,
+				BEE556D0DC577AF32ADDC8B4BC41A79E /* StarFillMode.swift */,
+				0E44CAEF356FC88016FE9B13E8F13518 /* StarLayer.swift */,
+				1B4B63530FF9106251470B48867E9064 /* Support Files */,
 			);
-			name = iOS;
+			name = Cosmos;
+			path = Cosmos;
+			sourceTree = "<group>";
+		};
+		3BF4DBBA84D0D2FA4728A27333F6D02B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				05C4280976BF93DA8B36818DE2E2A5E0 /* Cosmos */,
+				98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager */,
+				864A94EF0EB5DFEC5C1104AF6637B1EF /* Pods-FoodyBites */,
+				719D6C7F4106C35370D6AFF85B6915FA /* Pods-FoodyBites-FoodyBitesUITests */,
+				FAF823B65652E8BC63BCEF276223EFF8 /* Pods-FoodyBitesTests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		659347F73A5A870D8D1D770090D5855B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C16D49A6C2C7E8DAB6F8B811425D2563 /* IQKeyboardManager.modulemap */,
+				B5B2FD82C407CDD85F522A9A7A74B0D6 /* IQKeyboardManager-dummy.m */,
+				E8C0DECAA68BB07652BC8FC5C3E3A809 /* IQKeyboardManager-Info.plist */,
+				B74AB5CCC2C95955BF91BB3AAB480154 /* IQKeyboardManager-prefix.pch */,
+				0E32922CDD4CEAA00718209AF4BE051F /* IQKeyboardManager-umbrella.h */,
+				1BF96CAD7BB8CB12FC319E1B9B86278F /* IQKeyboardManager.debug.xcconfig */,
+				9DF46B75224E4EDF18156472CA0066D6 /* IQKeyboardManager.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IQKeyboardManager";
 			sourceTree = "<group>";
 		};
 		6982D3C746CC2499FF5B81960112CF19 /* Pods-FoodyBites-FoodyBitesUITests */ = {
@@ -196,21 +344,6 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		79099C1358341EBF13DD1A16CD6E0AFF /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				E5B6A643470459BDAF78465CA50A84F4 /* Cosmos.modulemap */,
-				2E9C6787280DFA6AA5C600055EE6EA4D /* Cosmos-dummy.m */,
-				FEA6041AC6BE050FAEDA843AE108C4CD /* Cosmos-Info.plist */,
-				569F011501DB1409E3120F376B6B7D0C /* Cosmos-prefix.pch */,
-				FE73B1AFBB1A8CB564DB09EA1BE2942E /* Cosmos-umbrella.h */,
-				0E29BC44317FF962374F2AB1B47271F3 /* Cosmos.debug.xcconfig */,
-				F39EEA0C4D40303552A248CC69340F49 /* Cosmos.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/Cosmos";
-			sourceTree = "<group>";
-		};
 		9491BC3B0FAA1FB71683636AC34DEF6E /* Pods-FoodyBites */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,58 +361,69 @@
 			path = "Target Support Files/Pods-FoodyBites";
 			sourceTree = "<group>";
 		};
-		CF1408CF629C7361332E53B88F7BD30C = {
+		A8D5F7310C4AD89F1705B683E2CD9731 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				1EEF3410A7BAA1DA5F110A17B8CD6B19 /* Pods */,
-				D7186504371673F7AF94F9D92CE5A721 /* Products */,
-				6CFDA66A2CDFE6675CBCC735ACF7529A /* Targets Support Files */,
+				1C140770066D7AA0480D4D68CD02EECE /* Cosmos */,
+				CC4A225290A558C0C984C9D5961999FA /* IQKeyboardManager */,
 			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				F9D206BABE81E6BF0B9B23880B238CC7 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D7186504371673F7AF94F9D92CE5A721 /* Products */ = {
+		CC4A225290A558C0C984C9D5961999FA /* IQKeyboardManager */ = {
 			isa = PBXGroup;
 			children = (
-				05C4280976BF93DA8B36818DE2E2A5E0 /* Cosmos */,
-				864A94EF0EB5DFEC5C1104AF6637B1EF /* Pods-FoodyBites */,
-				719D6C7F4106C35370D6AFF85B6915FA /* Pods-FoodyBites-FoodyBitesUITests */,
-				FAF823B65652E8BC63BCEF276223EFF8 /* Pods-FoodyBitesTests */,
+				7DE6426150C5962381AE1C792B7C2D27 /* IQBarButtonItem.h */,
+				C37490F7089863D07D74525B9B481A02 /* IQBarButtonItem.m */,
+				C6875D4A06D7A0066E0EEC0D0740D910 /* IQKeyboardManager.h */,
+				BD596DD6B081656C7CA3274FC04DFBC8 /* IQKeyboardManager.m */,
+				20F003040615DBF099E2FCB7474F77D8 /* IQKeyboardManagerConstants.h */,
+				F2AEFE2AD10F850F6DE6616149FD69E5 /* IQKeyboardManagerConstantsInternal.h */,
+				3E69F53BDE3462E5E103F7DDB8E898EA /* IQKeyboardReturnKeyHandler.h */,
+				EFB77BB89C7E01AB3B69635F75D1EC5D /* IQKeyboardReturnKeyHandler.m */,
+				F6A0D464BED1D6C4D93E1EE5AA954923 /* IQNSArray+Sort.h */,
+				78A92CE03035D2B5E789F62D13CDC6A1 /* IQNSArray+Sort.m */,
+				1CECF2FA5F56F47B3D7A89FC4F578099 /* IQPreviousNextView.h */,
+				0573288FC6B08572B41F6137ECA062E6 /* IQPreviousNextView.m */,
+				B3DDCBA86F80D0EBF9D0D23841D09138 /* IQTextView.h */,
+				E6128588B5F7023B71143F6438AE6308 /* IQTextView.m */,
+				D16130FFDED5DCA3C71ADC1848BEA3F2 /* IQTitleBarButtonItem.h */,
+				5F0C74E99CEBDA92172EDA3561D39C40 /* IQTitleBarButtonItem.m */,
+				FCADAFFCC8D4874A24E78F0762A7A0AE /* IQToolbar.h */,
+				9512D1A1A7CA8EA3C24858F801DA32D1 /* IQToolbar.m */,
+				21A8E121DBAF5CD2B7489A00481CEF09 /* IQUIScrollView+Additions.h */,
+				54E2385C347DC76B5AEA10F70E3C0A77 /* IQUIScrollView+Additions.m */,
+				D8DCAC9C85E05368E704275226CA438A /* IQUITextFieldView+Additions.h */,
+				2C4308668FA95B3F3EBF0F4D8DEF5FFE /* IQUITextFieldView+Additions.m */,
+				068A3C3862DBB6B0138CF0B6A0EB7062 /* IQUIView+Hierarchy.h */,
+				E5943D292182F897AF9480F99E57C0AD /* IQUIView+Hierarchy.m */,
+				90AD2CE2D9115C41243E529C6580E572 /* IQUIView+IQKeyboardToolbar.h */,
+				926B8D5124294375A3EA1ABDB530CE15 /* IQUIView+IQKeyboardToolbar.m */,
+				5BE00C70A8004E22522FA2E84D5D5F32 /* IQUIViewController+Additions.h */,
+				28EB6EAEF0EBFED7D2B9A92DEAD74AC5 /* IQUIViewController+Additions.m */,
+				659347F73A5A870D8D1D770090D5855B /* Support Files */,
 			);
-			name = Products;
+			name = IQKeyboardManager;
+			path = IQKeyboardManager;
 			sourceTree = "<group>";
 		};
-		E8B1D41F350B4C0A5CC6FD8E8873DED5 /* Cosmos */ = {
+		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
-				2F95F69EA32AB0728A2CCCF5ECBA773C /* CosmosAccessibility.swift */,
-				174979D91E7D6F800B205ABDD3EB318F /* CosmosDefaultSettings.swift */,
-				7148BEACE4E8E4A331749E74D5874D52 /* CosmosLayerHelper.swift */,
-				E3EFD3F770945B6DE9CEB6DFFBAC2C00 /* CosmosLayers.swift */,
-				EA6E7DAF60D8E62DA62B2CB23D43E16B /* CosmosLocalizedRating.swift */,
-				9B35696210957ADE15680CA907CD0C77 /* CosmosRating.swift */,
-				95B148CC2C6AA832097607C6D9E1130A /* CosmosSettings.swift */,
-				32E3874A468C60BEB281D0A1E213B262 /* CosmosSize.swift */,
-				AF1DF35E0E63321E5F772424D9EE48B1 /* CosmosText.swift */,
-				BCCA06310EBE16A09D01FECACF9824A3 /* CosmosTouch.swift */,
-				1ACFFC8A6CF484661158E175E3BA996B /* CosmosTouchTarget.swift */,
-				31F75C17AB2E3DBBADD82C283A9920F8 /* CosmosView.swift */,
-				F5897E31E1EC97ED9A077A7DE06FFED3 /* RightToLeft.swift */,
-				97A70406522118CCB5BDCB099CDB2C36 /* StarFillMode.swift */,
-				4F11A167F3AA6F45EEA463328BB8EE25 /* StarLayer.swift */,
-				79099C1358341EBF13DD1A16CD6E0AFF /* Support Files */,
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
+				A8D5F7310C4AD89F1705B683E2CD9731 /* Pods */,
+				3BF4DBBA84D0D2FA4728A27333F6D02B /* Products */,
+				6CFDA66A2CDFE6675CBCC735ACF7529A /* Targets Support Files */,
 			);
-			name = Cosmos;
-			path = Cosmos;
 			sourceTree = "<group>";
 		};
 		F9248F7172165A9B238890CFE7980962 /* Pods-FoodyBitesTests */ = {
@@ -298,6 +442,17 @@
 			path = "Target Support Files/Pods-FoodyBitesTests";
 			sourceTree = "<group>";
 		};
+		F9D206BABE81E6BF0B9B23880B238CC7 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				840FA0B75AF62912A30DDC66B647ED98 /* CoreGraphics.framework */,
+				79CF7D56C5D50C18B2EA0ED106D998C7 /* Foundation.framework */,
+				A42DBD2F42D55606EEBA514009498B87 /* QuartzCore.framework */,
+				04D60AC13D33197690A05C641925DDDA /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -309,19 +464,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AB54E80514F17FF81E41C0BA1AEA3D2 /* Headers */ = {
+		409211D0743ADB9E12858F097AB900B3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8540432E1CABEBAE956846D463E4F73 /* Pods-FoodyBites-FoodyBitesUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		908C830BB937E9A26ECFF66C77453C98 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB7EC8860175AB59124A29F98276C574 /* Pods-FoodyBites-umbrella.h in Headers */,
+				9EE42EA1D5742891C0A2718A3BFE0F4A /* IQBarButtonItem.h in Headers */,
+				293A4E38AD5968B32012FDCC10D5E3AC /* IQKeyboardManager.h in Headers */,
+				8B566763930AD11F2945B71E4B2754A2 /* IQKeyboardManager-umbrella.h in Headers */,
+				376283CB1C2F4FBFDEB918476761CBF2 /* IQKeyboardManagerConstants.h in Headers */,
+				768C7D8165465E63F576F9135C572829 /* IQKeyboardManagerConstantsInternal.h in Headers */,
+				571898C9118E0B2E87F77CD223979CC4 /* IQKeyboardReturnKeyHandler.h in Headers */,
+				92A2BA5CE2E0F13CF32B96118A54B298 /* IQNSArray+Sort.h in Headers */,
+				43B3A6E418AF6D457318D5DFD64B22B7 /* IQPreviousNextView.h in Headers */,
+				3A5E751E5D684DE8F34433773EF9F259 /* IQTextView.h in Headers */,
+				F73C6B8F53A58263A375518A8BFF974F /* IQTitleBarButtonItem.h in Headers */,
+				14F350D1AE912096B4B04F9A0C6BAABE /* IQToolbar.h in Headers */,
+				A0C2891A8EE757E199310C3601A66130 /* IQUIScrollView+Additions.h in Headers */,
+				4D44DCC513AD5E580D92EDDF2D6A45A0 /* IQUITextFieldView+Additions.h in Headers */,
+				9869BE90A4E205295E92E1930E059FC0 /* IQUIView+Hierarchy.h in Headers */,
+				B34EE15CECE3B3F06DC0C1BB1FFA61C1 /* IQUIView+IQKeyboardToolbar.h in Headers */,
+				C2E3562A9EDADE0BCFD5D54324629F46 /* IQUIViewController+Additions.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,6 +492,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C6F75DE73FFBBCE26872D7F3CA6A8E7 /* Pods-FoodyBitesTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4F7AC5DED6E1163678F78F83ABDE56E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50BB62FF2BBCD7A66EC83B14474ECECD /* Pods-FoodyBites-FoodyBitesUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBA8068B08D73423E8136150C51E0BFC /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8454236A712B95D675D8C24BE3EE7149 /* Pods-FoodyBites-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,17 +534,18 @@
 		};
 		C159C5A50114D9E495BEA4CBF1FF9063 /* Pods-FoodyBites-FoodyBitesUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 867FFA52AE9B0D933E5EFB056A27ED1B /* Build configuration list for PBXNativeTarget "Pods-FoodyBites-FoodyBitesUITests" */;
+			buildConfigurationList = CFD5D614C5E9E23A1C49350A2B2CDEFC /* Build configuration list for PBXNativeTarget "Pods-FoodyBites-FoodyBitesUITests" */;
 			buildPhases = (
-				5AB54E80514F17FF81E41C0BA1AEA3D2 /* Headers */,
-				9DE1F63F150C9B71246B73C7179F45E6 /* Sources */,
-				70908831244D5627FCE538B0D5FE96E4 /* Frameworks */,
-				C048D900F2FB73A9026D11E71BA23D92 /* Resources */,
+				A4F7AC5DED6E1163678F78F83ABDE56E /* Headers */,
+				DE5184CE5A2193FC2A942C462D6C4B93 /* Sources */,
+				AEBEC2BD772B1243C632A35F2E431966 /* Frameworks */,
+				B99314FD33144A20DE608406426D9E59 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A6A270411B705668BF13AFFBBF47F6AB /* PBXTargetDependency */,
+				865E1A5FFA81219A242B06538B7D6359 /* PBXTargetDependency */,
+				217F098CB7A9A0B2267DC1B52474F985 /* PBXTargetDependency */,
 			);
 			name = "Pods-FoodyBites-FoodyBitesUITests";
 			productName = Pods_FoodyBites_FoodyBitesUITests;
@@ -385,7 +564,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				95D0A8509FD3AD054D5C90B563F56F63 /* PBXTargetDependency */,
+				B97BFF32461307EA85C228577CCB4F2A /* PBXTargetDependency */,
 			);
 			name = "Pods-FoodyBitesTests";
 			productName = Pods_FoodyBitesTests;
@@ -394,21 +573,40 @@
 		};
 		EBFCC2B7A9B848D405CE4304CE23B1B7 /* Pods-FoodyBites */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 78313695F3E7AB88263367C97C64C6CD /* Build configuration list for PBXNativeTarget "Pods-FoodyBites" */;
+			buildConfigurationList = 7E29A530426FC2ADF610BA2B62D2B766 /* Build configuration list for PBXNativeTarget "Pods-FoodyBites" */;
 			buildPhases = (
-				908C830BB937E9A26ECFF66C77453C98 /* Headers */,
-				94D55FF016A1DC61D6ACAEBCF58993BD /* Sources */,
-				39F06B3A7276E86E42F98033DE89A332 /* Frameworks */,
-				B865DD94E05BEFF53AB49EBAD86DAC41 /* Resources */,
+				CBA8068B08D73423E8136150C51E0BFC /* Headers */,
+				07E486243D30351ABB3EF00421682BDF /* Sources */,
+				00CB833AA4B9D61BDB3E004DC0D831E5 /* Frameworks */,
+				0F47C50CB21E8293B6CCB0AC88B4D19D /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				03492310C309DEF946863D87FC3A5187 /* PBXTargetDependency */,
+				8A2A2B9AE3517278BFE59315ED864FD5 /* PBXTargetDependency */,
+				EA71EB0E7164D1E638DE0CB8D6CE11E3 /* PBXTargetDependency */,
 			);
 			name = "Pods-FoodyBites";
 			productName = Pods_FoodyBites;
 			productReference = 864A94EF0EB5DFEC5C1104AF6637B1EF /* Pods-FoodyBites */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 468D926BA08FE82BE611371F2784EEC3 /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */;
+			buildPhases = (
+				409211D0743ADB9E12858F097AB900B3 /* Headers */,
+				696476BA263493405A5C1762E016993A /* Sources */,
+				7D33780B948A3E4364412C5BC201A0CD /* Frameworks */,
+				D5CF6450C682B42321290106E8F7E838 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IQKeyboardManager;
+			productName = IQKeyboardManager;
+			productReference = 98527D7196957AAB07B79E2E2AFDE23E /* IQKeyboardManager */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -429,11 +627,12 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = D7186504371673F7AF94F9D92CE5A721 /* Products */;
+			productRefGroup = 3BF4DBBA84D0D2FA4728A27333F6D02B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				00F31BD5217A20974B5E9AAC6256D98E /* Cosmos */,
+				FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */,
 				EBFCC2B7A9B848D405CE4304CE23B1B7 /* Pods-FoodyBites */,
 				C159C5A50114D9E495BEA4CBF1FF9063 /* Pods-FoodyBites-FoodyBitesUITests */,
 				D4DD32878D2A165D2F2E90476145ACEF /* Pods-FoodyBitesTests */,
@@ -442,6 +641,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0F47C50CB21E8293B6CCB0AC88B4D19D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		9DB7FE8069374C74F71B43890A560412 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -449,14 +655,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B865DD94E05BEFF53AB49EBAD86DAC41 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C048D900F2FB73A9026D11E71BA23D92 /* Resources */ = {
+		B99314FD33144A20DE608406426D9E59 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -470,22 +669,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		94D55FF016A1DC61D6ACAEBCF58993BD /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
+		D5CF6450C682B42321290106E8F7E838 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF91A6758E01C59E3FC806C077DB014F /* Pods-FoodyBites-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9DE1F63F150C9B71246B73C7179F45E6 /* Sources */ = {
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07E486243D30351ABB3EF00421682BDF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				891A07858CCB0034997356363DCDB22B /* Pods-FoodyBites-FoodyBitesUITests-dummy.m in Sources */,
+				C087DC04B44A00CB67A3C701AB68F634 /* Pods-FoodyBites-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		696476BA263493405A5C1762E016993A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F822E3E2AEAA87BAD9A511F5487BA4B /* IQBarButtonItem.m in Sources */,
+				0A48DAEFF3B2B76B6D59ECEACCF349DB /* IQKeyboardManager.m in Sources */,
+				F4F723087ED20D05F02C8FF1562305CA /* IQKeyboardManager-dummy.m in Sources */,
+				A25CA3F2540143EFA8C6D6C45845B79A /* IQKeyboardReturnKeyHandler.m in Sources */,
+				A0AF68FE7C423F0A669441A25935D049 /* IQNSArray+Sort.m in Sources */,
+				10BBF53FAF4C4845C71FF1D16A1F2185 /* IQPreviousNextView.m in Sources */,
+				3C63DF222FD6B77E855A172B1CB46771 /* IQTextView.m in Sources */,
+				06FFE460D79ABD60F42C0332EB3BEE4D /* IQTitleBarButtonItem.m in Sources */,
+				E3226C305B708F68460A437B3A73C0DE /* IQToolbar.m in Sources */,
+				6C8D636FC19EF52AC1C6C137034BD842 /* IQUIScrollView+Additions.m in Sources */,
+				CCECE87431A451056454222F247B89D5 /* IQUITextFieldView+Additions.m in Sources */,
+				77F56E4B8630FEEF0B934FC9F86852AE /* IQUIView+Hierarchy.m in Sources */,
+				DDEBC6CD2F36B3D7445C6C419FC34102 /* IQUIView+IQKeyboardToolbar.m in Sources */,
+				47E70B39D50CD49CB93F05C8A29A71FE /* IQUIViewController+Additions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,36 +739,54 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DE5184CE5A2193FC2A942C462D6C4B93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A97919047EDE26B475E75C37FCC743E /* Pods-FoodyBites-FoodyBitesUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		03492310C309DEF946863D87FC3A5187 /* PBXTargetDependency */ = {
+		217F098CB7A9A0B2267DC1B52474F985 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IQKeyboardManager;
+			target = FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */;
+			targetProxy = E694359B6D67724AF80974494D7B8325 /* PBXContainerItemProxy */;
+		};
+		865E1A5FFA81219A242B06538B7D6359 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Cosmos;
 			target = 00F31BD5217A20974B5E9AAC6256D98E /* Cosmos */;
-			targetProxy = DB133BD0CCA9A1E2AA893A777FCA2DB6 /* PBXContainerItemProxy */;
+			targetProxy = B4D46C7815FD90DBE38D84B6A3CD0D80 /* PBXContainerItemProxy */;
 		};
-		95D0A8509FD3AD054D5C90B563F56F63 /* PBXTargetDependency */ = {
+		8A2A2B9AE3517278BFE59315ED864FD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Cosmos;
+			target = 00F31BD5217A20974B5E9AAC6256D98E /* Cosmos */;
+			targetProxy = 34F7B44A5E3FED07A025902583350F00 /* PBXContainerItemProxy */;
+		};
+		B97BFF32461307EA85C228577CCB4F2A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-FoodyBites";
 			target = EBFCC2B7A9B848D405CE4304CE23B1B7 /* Pods-FoodyBites */;
-			targetProxy = BA19239EE7DE2310B2CDD0A85DC64F76 /* PBXContainerItemProxy */;
+			targetProxy = 484DF214EE8D77638BBC925ED061B1BC /* PBXContainerItemProxy */;
 		};
-		A6A270411B705668BF13AFFBBF47F6AB /* PBXTargetDependency */ = {
+		EA71EB0E7164D1E638DE0CB8D6CE11E3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = Cosmos;
-			target = 00F31BD5217A20974B5E9AAC6256D98E /* Cosmos */;
-			targetProxy = AB6C766FF92ABA4B8BB1C44E2EFA7EFB /* PBXContainerItemProxy */;
+			name = IQKeyboardManager;
+			target = FBA456CB50E371584C11231929A0971E /* IQKeyboardManager */;
+			targetProxy = 591E4C45D1E4A6F58362B2613DA4568D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2316894E52CCD746ED96F11529083610 /* Debug */ = {
+		36E5A2B4BE664E7B27925801C9054E7E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A0041F3AFF98CA596A260ACCC9DB8A41 /* Pods-FoodyBites.debug.xcconfig */;
+			baseConfigurationReference = 1BF96CAD7BB8CB12FC319E1B9B86278F /* IQKeyboardManager.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -558,23 +795,22 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FoodyBites/Pods-FoodyBites-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FoodyBites/Pods-FoodyBites.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManager;
+				PRODUCT_NAME = IQKeyboardManager;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -684,9 +920,47 @@
 			};
 			name = Debug;
 		};
+		618AD71E05974FFA4B5562BA3E120B7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91D1ADC536792C71D4AAC09C210F9A7 /* Pods-FoodyBites.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodyBites/Pods-FoodyBites-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodyBites/Pods-FoodyBites.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		6EC69149E28F5E27C4706FFEAF8B58F4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0E29BC44317FF962374F2AB1B47271F3 /* Cosmos.debug.xcconfig */;
+			baseConfigurationReference = 7F9E7018F87B6C7457FAB7EA36D861B3 /* Cosmos.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -717,6 +991,44 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
+		};
+		7BAB851C4A3C1C43EA5FA22D3664B201 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACDF17C57137F24E1CAB82A6B958809 /* Pods-FoodyBites-FoodyBitesUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodyBites-FoodyBitesUITests/Pods-FoodyBites-FoodyBitesUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodyBites-FoodyBitesUITests/Pods-FoodyBites-FoodyBitesUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		80038744E0A021358D5B18FE07730D77 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -756,9 +1068,44 @@
 			};
 			name = Release;
 		};
-		A4E65CE93AD02D4BDF1CCE90169EB849 /* Release */ = {
+		BC176CCC28BDC2278EE6CD1BC0251C58 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3ACDF17C57137F24E1CAB82A6B958809 /* Pods-FoodyBites-FoodyBitesUITests.release.xcconfig */;
+			baseConfigurationReference = 9DF46B75224E4EDF18156472CA0066D6 /* IQKeyboardManager.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/IQKeyboardManager/IQKeyboardManager-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/IQKeyboardManager/IQKeyboardManager.modulemap";
+				PRODUCT_MODULE_NAME = IQKeyboardManager;
+				PRODUCT_NAME = IQKeyboardManager;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BDF69C48029D61EFE6BAA0D7FCEC82A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0041F3AFF98CA596A260ACCC9DB8A41 /* Pods-FoodyBites.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -770,7 +1117,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FoodyBites-FoodyBitesUITests/Pods-FoodyBites-FoodyBitesUITests-Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-FoodyBites/Pods-FoodyBites-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -779,7 +1126,7 @@
 					"@loader_path/Frameworks",
 				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FoodyBites-FoodyBitesUITests/Pods-FoodyBites-FoodyBitesUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-FoodyBites/Pods-FoodyBites.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -788,15 +1135,14 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		C78C1BA85703BCE69743B7C85B847990 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F39EEA0C4D40303552A248CC69340F49 /* Cosmos.release.xcconfig */;
+			baseConfigurationReference = AFDC8D52308E5DAEE9BA99E08A7E9B1A /* Cosmos.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -891,7 +1237,7 @@
 			};
 			name = Release;
 		};
-		D576FD15F3E731CEFB92688A501A9EAA /* Debug */ = {
+		DDA0630682842B05628676ECF9499DE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4059D921FA166310670AA674090DBB7E /* Pods-FoodyBites-FoodyBitesUITests.debug.xcconfig */;
 			buildSettings = {
@@ -928,44 +1274,6 @@
 			};
 			name = Debug;
 		};
-		E8FAB530C08B469FD004B064B80B37D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B91D1ADC536792C71D4AAC09C210F9A7 /* Pods-FoodyBites.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-FoodyBites/Pods-FoodyBites-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-FoodyBites/Pods-FoodyBites.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -974,6 +1282,15 @@
 			buildConfigurations = (
 				39D8853BE604834EC21DA0B556DB5324 /* Debug */,
 				80038744E0A021358D5B18FE07730D77 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		468D926BA08FE82BE611371F2784EEC3 /* Build configuration list for PBXNativeTarget "IQKeyboardManager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36E5A2B4BE664E7B27925801C9054E7E /* Debug */,
+				BC176CCC28BDC2278EE6CD1BC0251C58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -987,20 +1304,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		78313695F3E7AB88263367C97C64C6CD /* Build configuration list for PBXNativeTarget "Pods-FoodyBites" */ = {
+		7E29A530426FC2ADF610BA2B62D2B766 /* Build configuration list for PBXNativeTarget "Pods-FoodyBites" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2316894E52CCD746ED96F11529083610 /* Debug */,
-				E8FAB530C08B469FD004B064B80B37D1 /* Release */,
+				BDF69C48029D61EFE6BAA0D7FCEC82A5 /* Debug */,
+				618AD71E05974FFA4B5562BA3E120B7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		867FFA52AE9B0D933E5EFB056A27ED1B /* Build configuration list for PBXNativeTarget "Pods-FoodyBites-FoodyBitesUITests" */ = {
+		CFD5D614C5E9E23A1C49350A2B2CDEFC /* Build configuration list for PBXNativeTarget "Pods-FoodyBites-FoodyBitesUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D576FD15F3E731CEFB92688A501A9EAA /* Debug */,
-				A4E65CE93AD02D4BDF1CCE90169EB849 /* Release */,
+				DDA0630682842B05628676ECF9499DE6 /* Debug */,
+				7BAB851C4A3C1C43EA5FA22D3664B201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

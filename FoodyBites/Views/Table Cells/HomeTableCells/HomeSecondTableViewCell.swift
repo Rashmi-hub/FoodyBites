@@ -33,11 +33,7 @@ extension HomeSecondTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeSecondCollectionViewCell", for: indexPath) as! HomeSecondCollectionViewCell
-        cell.layer.backgroundColor = UIColor.white.cgColor
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowRadius = 8
-        cell.layer.shadowOpacity = 2.0
-        cell.layer.cornerRadius = 8
+        cell.addShadow()
         return cell
     }
     

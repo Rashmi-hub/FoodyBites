@@ -18,8 +18,8 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="oyK-wj-Wm4">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <rect key="frame" x="10" y="0.0" width="310" height="138"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JgI-Y1-bTg">
                             <size key="itemSize" width="128" height="128"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -29,13 +29,14 @@
                     </collectionView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="oyK-wj-Wm4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CPj-IT-dIm"/>
+                    <constraint firstItem="oyK-wj-Wm4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="CPj-IT-dIm"/>
                     <constraint firstItem="oyK-wj-Wm4" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CWs-3C-Xfb"/>
                     <constraint firstAttribute="trailing" secondItem="oyK-wj-Wm4" secondAttribute="trailing" id="P0v-iX-0U8"/>
-                    <constraint firstAttribute="bottom" secondItem="oyK-wj-Wm4" secondAttribute="bottom" id="pq4-u0-jfo"/>
+                    <constraint firstAttribute="bottom" secondItem="oyK-wj-Wm4" secondAttribute="bottom" constant="10" id="pq4-u0-jfo"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
             <connections>
                 <outlet property="CollectionView" destination="oyK-wj-Wm4" id="ZmB-fY-RTL"/>
             </connections>
@@ -43,8 +44,8 @@
         </tableViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

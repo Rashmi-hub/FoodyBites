@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -24,7 +24,8 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QSK-4o-kod">
-                        <rect key="frame" x="15" y="8" width="192" height="30"/>
+                        <rect key="frame" x="15" y="8" width="195" height="30"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="Bj4-Ui-OGC"/>
                         </constraints>
@@ -33,15 +34,16 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KIs-Ui-052">
-                        <rect key="frame" x="215" y="8" width="90" height="30"/>
+                        <rect key="frame" x="218" y="8" width="94" height="30"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="5Eq-Vz-aNf"/>
-                            <constraint firstAttribute="width" constant="90" id="eIB-RQ-bIc"/>
+                            <constraint firstAttribute="width" constant="94" id="eIB-RQ-bIc"/>
                         </constraints>
                         <color key="tintColor" name="unselectedIcon"/>
                         <state key="normal" title="Button"/>
                         <buttonConfiguration key="configuration" style="plain" title="Sell all (9)">
-                            <fontDescription key="titleFontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="14"/>
+                            <fontDescription key="titleFontDescription" name="JosefinSans-Regular" family="Josefin Sans" pointSize="13"/>
                         </buttonConfiguration>
                     </button>
                 </subviews>
@@ -49,7 +51,7 @@
                 <constraints>
                     <constraint firstItem="QSK-4o-kod" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="84a-gE-ubZ"/>
                     <constraint firstAttribute="bottom" secondItem="QSK-4o-kod" secondAttribute="bottom" constant="8" id="BJh-nV-XIe"/>
-                    <constraint firstAttribute="trailing" secondItem="KIs-Ui-052" secondAttribute="trailing" constant="15" id="G3H-al-WKg"/>
+                    <constraint firstAttribute="trailing" secondItem="KIs-Ui-052" secondAttribute="trailing" constant="8" id="G3H-al-WKg"/>
                     <constraint firstItem="KIs-Ui-052" firstAttribute="leading" secondItem="QSK-4o-kod" secondAttribute="trailing" constant="8" id="UFi-Y9-tni"/>
                     <constraint firstItem="KIs-Ui-052" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="h05-MI-HIN"/>
                     <constraint firstAttribute="bottom" secondItem="KIs-Ui-052" secondAttribute="bottom" constant="8" id="jcb-s7-BVh"/>
@@ -57,7 +59,7 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="btnSeeAll" destination="KIs-Ui-052" id="PID-O3-gvm"/>
                 <outlet property="lblHeading" destination="QSK-4o-kod" id="XeH-qt-AWu"/>

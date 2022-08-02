@@ -31,12 +31,11 @@ extension HomeThirdTableViewCell: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeThirdCollectionViewCell", for: indexPath) as! HomeThirdCollectionViewCell
-        cell.layer.backgroundColor = UIColor.white.cgColor
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowRadius = 8
-        cell.layer.shadowOpacity = 2.0
-        cell.layer.cornerRadius = 8
-        cell.imgProfile.layer.cornerRadius = cell.imgProfile.frame.height/2.7
+        cell.addShadow()
+        cell.imgProfile.layer.cornerRadius = cell.imgProfile.frame.size.height / 2.7
+        cell.layer.cornerRadius = cell.frame.size.height/2
+        cell.layer.backgroundColor = UIColor.clear.cgColor
+        
         return cell
     }
     

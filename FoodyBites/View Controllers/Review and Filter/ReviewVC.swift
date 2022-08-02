@@ -9,14 +9,29 @@ import UIKit
 
 class ReviewVC: UIViewController {
     @IBOutlet weak var tblReview: UITableView!
+    @IBOutlet weak var btnDone: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tblReview.delegate = self
         tblReview.dataSource = self
         tblReview.register(UINib.init(nibName: "ReviewTableViewCell", bundle: nil), forCellReuseIdentifier: "ReviewTableViewCell")
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black, NSAttributedString.Key.font: UIFont(name: "JosefinSans-SemiBold", size: 24.0)!]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        navigationController?.navigationBar.tintColor = UIColor.black
+        title = "Review"
+    }
+    
     static func instance() -> ReviewVC {
         return UIStoryboard.init(name: "Review_Filter", bundle: nil).instantiateViewController(withIdentifier: "ReviewVC") as! ReviewVC
+    }
+    
+    @IBAction func btnBackClicked(_ sender: UIButton) {
+        self.navigationController?.popViewController(animated: true)
     }
 }
 extension ReviewVC: UITableViewDelegate, UITableViewDataSource {

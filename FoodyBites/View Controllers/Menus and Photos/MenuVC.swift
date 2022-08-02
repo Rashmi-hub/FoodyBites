@@ -15,14 +15,29 @@ class MenuVC: UIViewController {
         collectionMenu.delegate = self
         collectionMenu.dataSource = self
         collectionMenu.collectionViewLayout = InstagramLayout()
-
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black, NSAttributedString.Key.font: UIFont(name: "JosefinSans-SemiBold", size: 24.0)!]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        navigationController?.navigationBar.tintColor = UIColor.black
+        title = "Menu & Photos"
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationItem.backBarButtonItem?.tintColor = .white
+    }
+    
     static func instance() -> MenuVC {
         return UIStoryboard.init(name: "Home", bundle: nil).instantiateViewController(withIdentifier: "MenuVC") as! MenuVC
     }
     @IBAction func btnBackClicked(_ sender: UIButton) {
             self.navigationController?.popViewController(animated: true)
     }
+    
+   
+    
 }
 
 extension MenuVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -59,9 +74,7 @@ extension MenuVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollec
     
      func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
          print(indexPath.row)
-         let selectedImg = ImgArray[indexPath.row]
          let vc = PreviewVC.instance()
-         vc.newImg = selectedImg
          self.navigationController?.pushViewController(vc, animated: true)
      }
    

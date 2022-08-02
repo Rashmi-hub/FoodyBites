@@ -9,15 +9,21 @@ import UIKit
 
 class ImgTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var viewDirection: UIButton!
+    @IBOutlet weak var btnSettings: UIButton!
+    @IBOutlet weak var btnFavourites: UIButton!
+    @IBOutlet weak var btnBack: UIButton!
+
+
     override func awakeFromNib() {
         super.awakeFromNib()
+        viewDirection.layer.cornerRadius = 20
         // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     
 }

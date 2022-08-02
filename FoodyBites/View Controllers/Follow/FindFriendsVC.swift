@@ -13,10 +13,19 @@ class FindFriendsVC: UIViewController {
     var selectedIndex = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.isNavigationBarHidden = false
         tblFollow.delegate = self
         tblFollow.dataSource = self
         tblFollow.register(UINib.init(nibName: "tblFollowCell", bundle: nil), forCellReuseIdentifier: "tblFollowCell")
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black, NSAttributedString.Key.font: UIFont(name: "JosefinSans-SemiBold", size: 24.0)!]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        navigationController?.navigationBar.tintColor = UIColor.black
+        title = "Find Friends"
     }
     
     @IBAction func btnBackClicked(_ sender: UIButton) {
@@ -43,16 +52,17 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "tblFollowCell", for: indexPath) as! tblFollowCell
-        cell.btnFollow.addTarget(self, action: #selector(editGroupAction(sender:)), for: .touchUpInside)
         cell.btnFollow.tag = indexPath.row
         cell.btnFollow.backgroundColor = .white
+        cell.btnFollow.addTarget(self, action: #selector(editGroupAction(sender:)), for: .touchUpInside)
 
         if indexPath.row == selectedIndex {
-            cell.btnFollow.backgroundColor = UIColor(named: "ClickEventColor")
-            cell.btnFollow.setTitle("Unfollow", for: UIControl.State.normal)
+            cell.btnFollow.layer.backgroundColor = UIColor(named: "ClickEventColor")?.cgColor
+            cell.btnFollow.layer.cornerRadius = 10.0
+            cell.btnFollow.setTitle("Follow", for: UIControl.State.normal)
         }
         else {
-            cell.btnFollow.backgroundColor = .clear
+            cell.btnFollow.backgroundColor = .white
         }
         return cell
     }
@@ -78,24 +88,15 @@ extension FindFriendsVC: UITableViewDelegate, UITableViewDataSource {
         return 100
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = ProfileVC.instance()
-        self.navigationController?.pushViewController(vc, animated: true)
-//        let cell = tblFollow.cellForRow(at: indexPath) as! tblFollowCell
-//        cell.btnFollow.backgroundColor = UIColor(named: "ClickEventColor")
-//        cell.btnFollow.setTitle("Follow", for: UIControl.State.normal)
-//        cell.btnFollow.clipsToBounds = true
-//        tblFollow.reloadData()
+    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+        let cell = tblFollow.cellForRow(at: indexPath) as! tblFollowCell
+        cell.btnFollow.setTitle("Unfollow", for: UIControl.State.normal)
+        cell.btnFollow.backgroundColor = .white
     }
-    
-//    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-//        let cell = tblFollow.cellForRow(at: indexPath) as! tblFollowCell
-//        cell.btnFollow.setTitle("Unfollow", for: UIControl.State.normal)
-//        cell.btnFollow.backgroundColor = .clear
-//    }
-    
+
     @objc func editGroupAction(sender: UIButton) {
         selectedIndex = sender.tag
         tblFollow.reloadData()
     }
+    
 }

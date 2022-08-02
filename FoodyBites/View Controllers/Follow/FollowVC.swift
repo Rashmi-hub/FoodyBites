@@ -11,6 +11,7 @@ class FollowVC: UIViewController {
     @IBOutlet weak var tblFollower: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Follower"
         tblFollower.delegate = self
         tblFollower.dataSource = self
         tblFollower.register(UINib.init(nibName: "FollowerTableViewCell", bundle: nil), forCellReuseIdentifier: "FollowerTableViewCell")

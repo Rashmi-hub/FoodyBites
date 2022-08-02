@@ -6,9 +6,12 @@
 //
 
 import UIKit
-
+protocol favPassData {
+    func passTheCurrent(tableViewIndex:Int, collectionViewIndex: Int)
+}
 class FavouritesTableViewCell: UITableViewCell {
     @IBOutlet weak var CollectionView: UICollectionView!
+    var delegate: favPassData?
     override func awakeFromNib() {
         super.awakeFromNib()
         CollectionView.delegate = self
@@ -28,24 +31,27 @@ extension FavouritesTableViewCell: UICollectionViewDelegate, UICollectionViewDat
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "HomeFirstCollectionViewCell", for: indexPath) as! HomeFirstCollectionViewCell
-        cell.layer.backgroundColor = UIColor.white.cgColor
-        cell.layer.shadowColor = UIColor.black.cgColor
-        cell.layer.shadowRadius = 12
-        cell.layer.shadowOpacity = 6.0
-        cell.layer.cornerRadius = 10
+        cell.viewRate.layer.cornerRadius = 10.0
+        cell.viewRate.layer.shadowColor = UIColor.black.cgColor
+        cell.viewRate.layer.shadowOpacity = 0.6
+        cell.addShadow()
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 370 , height: 330)
+        return CGSize(width: collectionView.frame.size.width-10 , height: collectionView.frame.size.height)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+        return UIEdgeInsets(top: 20, left: 0, bottom: 20, right: 0)
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return 20
+//    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+//        return 20
+//    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.passTheCurrent(tableViewIndex: 1, collectionViewIndex: indexPath.row)
     }
 }
 

@@ -17,7 +17,16 @@ class SettingsVC: UIViewController {
         super.viewDidLoad()
         tblSettings.delegate = self
         tblSettings.dataSource = self
+        self.tabBarController?.tabBar.isHidden = true
         tblSettings.register(UINib.init(nibName: "SettingsTableViewCell", bundle: nil), forCellReuseIdentifier: "SettingsTableViewCell")
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.black, NSAttributedString.Key.font: UIFont(name: "JosefinSans-SemiBold", size: 24.0)!]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        navigationController?.navigationBar.tintColor = UIColor.black
+        title = "Settings"
     }
     
     @IBAction func btnBackClicked(_ sender: Any) {
@@ -27,7 +36,6 @@ class SettingsVC: UIViewController {
     static func instance() -> SettingsVC {
         return UIStoryboard.init(name: "Settings", bundle: nil).instantiateViewController(withIdentifier: "SettingsVC") as! SettingsVC
     }
-    
 }
 
 extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
@@ -50,10 +58,18 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SettingsTableViewCell", for: indexPath) as! SettingsTableViewCell
         if indexPath.section == 0 {
             cell.lblTitle.text = arrayAccount[indexPath.row]
+            if indexPath.row == 0{
+                cell.btnnext.addTarget(self, action: #selector(btnPasswordClicked), for: .touchUpInside)
+            }
+            if indexPath.row == 1{
+                cell.btnnext.addTarget(self, action: #selector(btnChangeLanguage), for: .touchUpInside)
+            }
+            
         }
         else if indexPath.section == 1{
             if indexPath.row == 2{
                 cell.lblTitle.textColor = UIColor.blue
+//                cell.btnnext.addTarget(self, action: #selector(btnLogout), for: .touchUpInside)
             }
             cell.lblTitle.text = arrayOther[indexPath.row]
         }
@@ -120,10 +136,28 @@ extension SettingsVC: UITableViewDelegate, UITableViewDataSource {
         alert.addAction(No)
         let Yes = UIAlertAction(title: "Yes", style: .default) { UIAlertAction in
             print("Yes button pressed")
-            self.navigationController?.popToRootViewController(animated: true)
-        }
+            let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let vc = mainStoryboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            let rootView = UINavigationController(rootViewController: vc)
+            UIApplication.shared.keyWindow?.rootViewController = rootView
+            UserDefaults.standard.set(false, forKey: constant.isLoggedIn)
+            }
+        
         alert.addAction(Yes)
         self.present(alert, animated: true, completion: nil)
     }
     
+    @objc func btnPasswordClicked(){
+        let vc = ChangePasswordVC.instance()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @objc func btnChangeLanguage(){
+        let vc = LanguageVC.instance()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+//    @objc func btnLogout(){
+//        let vc = LanguageVC.instance()
+//        self.navigationController?.pushViewController(vc, animated: true)
+//    }
 }

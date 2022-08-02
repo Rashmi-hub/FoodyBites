@@ -7,6 +7,7 @@ target 'FoodyBites' do
 
   # Pods for FoodyBites
 	pod 'Cosmos', '~> 23.0'
+	pod 'IQKeyboardManager'
   target 'FoodyBitesTests' do
     inherit! :search_paths
     # Pods for testing
